@@ -5,11 +5,13 @@
     <title></title>
   </head>
   <body>
-    <?php
-$a = 17;
-$b = 18;
-$med = ($a+$b+$c)/3
-echo "A média de $a + $b + $c é $med";
+<?php
+
+$a = 7;
+$b = 3;
+$div = (int)($a/$b);
+echo "A divisão inteira de $a/$b é $div";
+
 ?>
 
   </body>
