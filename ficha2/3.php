@@ -7,10 +7,16 @@
   <body>
 <?php
 
-$cores = array('Vermelho', 'Verde', 'Azul', 'Violeta');
-echo $cores[1];
+$num = array(3,1,2);
+sort($num);
+foreach ($num as $value) {
+echo $value.' ';
+}
+
 
 ?>
+
+
 
   </body>
 </html>

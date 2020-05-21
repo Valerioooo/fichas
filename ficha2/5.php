@@ -7,10 +7,11 @@
   <body>
 <?php
 
-$cores = array('Vermelho', 'Verde', 'Azul', 'Violeta');
-echo $cores[1];
-
+echo "<br>A data de creação é: ", ("d/m/Y"), "<br>";
+echo "A data atual é: ", date("d/m/Y");
 ?>
+
+
 
   </body>
 </html>
