@@ -7,7 +7,7 @@
   <body>
 <?php
 
-echo "<br>A data de creação é: ", ("d/m/Y"), "<br>";
+echo "<br>A data de creação é: ", date("d/m/Y", filemtime("5.php")), "<br>";
 echo "A data atual é: ", date("d/m/Y");
 ?>
 
