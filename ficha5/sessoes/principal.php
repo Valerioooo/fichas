@@ -7,7 +7,4 @@ else{
 header('location: testa_login.html');
 }
 
-
-
-
- ?>
+?>
