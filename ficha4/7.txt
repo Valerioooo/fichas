@@ -1,0 +1,6 @@
+Resposta:
+7)
+Um cookie pode ser identificado dando print do array onde estão guardados os cookies
+
+a)
+A função base64_decode descodifica valores encriptados em base64
