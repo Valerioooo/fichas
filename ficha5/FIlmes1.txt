@@ -1,0 +1,216 @@
+CREATE DATABASE PSIFLIX
+
+USE PSIFLIX
+
+CREATE TABLE Genero(
+    Id_Genero int auto_increment PRIMARY KEY,
+    NomeGenero varchar(50) NOT NULL)
+
+CREATE TABLE Idioma(
+    Id_Idioma int auto_increment PRIMARY KEY,
+    NomeIdioma varchar(50) NOT NULL)
+
+CREATE TABLE Pais(
+    Id_Pais int auto_increment PRIMARY key,
+    NomePais varchar(50) NOT NULL,
+    Nacionalidade varchar(50)NOT NULL)
+
+CREATE TABLE Realizador(
+    Id_Realizador int Auto_increment PRIMARY KEY,
+    Nome varchar(50) NOT NULL,
+    Apelido varchar(50),
+    DataNasc Date,
+    Sexo char(1),
+    Nacionalidade int,
+    FOREIGN key(Nacionalidade) REFERENCES Pais(Id_Pais))
+
+CREATE TABLE Filme(
+    Id_Filme int auto_increment PRIMARY KEY,
+    Titulo varchar(255) NOT NULL,
+    DataLancamento date NOT NULL,
+    Id_Realizador int NOT NULL,
+    RankingIMDB float NOT NULL,
+    Id_Pais int NOT NULL,
+    Id_Idioma int NOT NULL,
+    Id_Genero int NOT NULL,
+    Duracao int NOT NULL,
+    FOREIGN key(Id_Realizador) REFERENCES Realizador(Id_Realizador),
+    FOREIGN key(Id_Pais) REFERENCES Pais(Id_Pais),
+    FOREIGN key(Id_Idioma) REFERENCES Idioma(Id_Idioma),
+    FOREIGN key(Id_Genero) REFERENCES Genero(Id_Genero))
+
+CREATE TABLE Ator(
+    Id_Ator int Auto_increment PRIMARY KEY,
+    Nome varchar(50) NOT NULL,
+    Apelido varchar(50) NOT NULL,
+    DataNasc Date,
+    Sexo char(1),
+    Nacionalidade int,
+    FOREIGN key(Nacionalidade) REFERENCES Pais(Id_Pais))
+
+CREATE TABLE Papel(
+    Id_Papel int auto_increment primary key,
+    Id_Filme int,
+    Id_Ator int,
+    FOREIGN key(Id_Filme) REFERENCES Filme(Id_Filme),
+    FOREIGN key(Id_Ator)  REFERENCES Ator(Id_Ator) )
+
+
+#--------- preenchimento
+#-----Genero------------------
+insert into Genero(NomeGenero) values('Ação');
+insert into Genero(NomeGenero) values('Drama');
+insert into Genero(NomeGenero) values('Ficção-Cientifica');
+insert into Genero(NomeGenero) values('Terror');
+insert into Genero(NomeGenero) values('Romance');
+#-----Pais------------------
+insert into Pais(NomePais,Nacionalidade) values('United States of America','Americano/a');
+insert into Pais(NomePais,Nacionalidade) values('Portugal','Português/a');
+insert into Pais(NomePais,Nacionalidade) values('France','Françês/a');
+insert into Pais(NomePais,Nacionalidade) values('United Kingdom','Britânico/a');
+insert into Pais(NomePais,Nacionalidade) values('Canadá','Canadiano');
+insert into Pais(NomePais,Nacionalidade) values('Suécia','Sueco/a');
+#-----Idioma------------------
+insert into Idioma(NomeIdioma) values('inglês');
+insert into Idioma(NomeIdioma) values('português');
+insert into Idioma(NomeIdioma) values('françês');
+#-----Realizador---------------
+insert into Realizador(Nome, Apelido, DataNasc, Sexo, Nacionalidade) values('James', 'Cameron', '1954-08-16', 'm', 5);
+insert into Realizador(Nome, Apelido, DataNasc, Sexo, Nacionalidade) values('Brian', 'De Palma', '1940-09-11', 'm', 1);
+insert into Realizador(Nome, Apelido, DataNasc, Sexo, Nacionalidade) values('Jon', 'Watts', '1981-06-28', 'm', 1);
+insert into Realizador(Nome, Apelido, DataNasc, Sexo, Nacionalidade) values('Lasse', 'Hallström', '1946-06-02', 'm', 6);
+
+#-----Ator------------------
+insert into Ator(Nome, Apelido, DataNasc, Sexo, Nacionalidade) values('Leonardo', 'DiCaprio', '1974-11-11', 'm', 1);
+insert into Ator(Nome, Apelido, DataNasc, Sexo, Nacionalidade) values('Tom', 'Cruise', '1962-07-03', 'm', 1);
+insert into Ator(Nome, Apelido, DataNasc, Sexo, Nacionalidade) values('Tom', 'Holland', '1996-06-01', 'm', 1);
+insert into Ator(Nome, Apelido, DataNasc, Sexo, Nacionalidade) values('Johnny', 'Depp', '1963-06-09', 'm', 1);
+insert into Ator(Nome, Apelido, DataNasc, Sexo, Nacionalidade) values('Kate', 'Winslet', '1975-10-05', 'f', 4);
+insert into Ator(Nome, Apelido, DataNasc, Sexo, Nacionalidade) values('Jon', 'Voight', '1938-12-29', 'm', 1);
+insert into Ator(Nome, Apelido, DataNasc, Sexo, Nacionalidade) values('Emmanuelle', 'Béart', '1963-08-14', 'f', 3);
+insert into Ator(Nome, Apelido, DataNasc, Sexo, Nacionalidade) values('Zendaya', 'Coleman', '1996-09-01', 'f', 1)
+
+
+
+#-----Filme------------------
+insert into Filme(Titulo, DataLancamento, Id_Realizador, RankingIMDB, Id_Pais, Id_Idioma, Id_Genero, Duracao) values('Titanic', '1997-12-19', 1, 7.8, 1, 1, 5, 194);
+insert into Filme(Titulo, DataLancamento, Id_Realizador, RankingIMDB, Id_Pais, Id_Idioma, Id_Genero, Duracao) values('Missão: Impossivél', '1996-05-22', 2, 7.1, 1, 1, 1, 110);
+insert into Filme(Titulo, DataLancamento, Id_Realizador, RankingIMDB, Id_Pais, Id_Idioma, Id_Genero, Duracao) values('Spider-Man: Homecoming', '2017-07-07', 3, 7.4, 1, 1, 1, 133);
+insert into Filme(Titulo, DataLancamento, Id_Realizador, RankingIMDB, Id_Pais, Id_Idioma, Id_Genero, Duracao) values('Gilbert Grape', '1993-03-04', 4, 7.8, 6, 1, 2, 118);
+
+#-----Papel------------------
+insert into Papel(Id_Filme, Id_Ator) values(1,1);
+insert into Papel(Id_Filme, Id_Ator) values(1,5);
+insert into Papel(Id_Filme, Id_Ator) values(2,2);
+insert into Papel(Id_Filme, Id_Ator) values(2,7);
+insert into Papel(Id_Filme, Id_Ator) values(2,6);
+insert into Papel(Id_Filme, Id_Ator) values(3,3);
+insert into Papel(Id_Filme, Id_Ator) values(3,8);
+insert into Papel(Id_Filme, Id_Ator) values(4,1);
+insert into Papel(Id_Filme, Id_Ator) values(4,4);
+
+
+# Views
+CREATE VIEW `ViewAtor` AS
+    SELECT
+        `Ator`.`Id_Ator` AS `Id_Ator`,
+        CONCAT(`Ator`.`Nome`, ' ', `Ator`.`Apelido`) AS `Nome`,
+        YEAR(CURRENT_TIMESTAMP()) - YEAR(`Ator`.`DataNasc`) AS `Idade`,
+        `Ator`.`Sexo` AS `Sexo`,
+        `Pais`.`Nacionalidade` AS `Nacionalidade`
+    FROM
+        (`Ator`
+        JOIN `Pais`)
+    WHERE
+        `Ator`.`Nacionalidade` = `Pais`.`Id_Pais`
+
+
+CREATE VIEW `ViewFilme` AS
+    SELECT
+        `Filme`.`Id_Filme` AS `Id do Filme`,
+        `Filme`.`Titulo` AS `Título do Filme`,
+        `Filme`.`DataLancamento` AS `Data de Lançamento`,
+        CONCAT(`Realizador`.`Nome`,
+                ' ',
+                `Realizador`.`Apelido`) AS `Nome do Realizador`,
+        `Filme`.`RankingIMDB` AS `Ranking do IMDB`,
+        `Pais`.`NomePais` AS `País de Origem`,
+        `Idioma`.`NomeIdioma` AS `Idioma`,
+        `Genero`.`NomeGenero` AS `Genero`,
+        `Filme`.`Duracao` AS `Duração em Minutos`
+    FROM
+        ((((`Filme`
+        JOIN `Realizador`)
+        JOIN `Pais`)
+        JOIN `Idioma`)
+        JOIN `Genero`)
+    WHERE
+        `Filme`.`Id_Realizador` = `Realizador`.`Id_Realizador`
+            AND `Filme`.`Id_Pais` = `Pais`.`Id_Pais`
+            AND `Filme`.`Id_Idioma` = `Idioma`.`Id_Idioma`
+            AND `Filme`.`Id_Genero` = `Genero`.`Id_Genero`
+
+create view ViewPapel as
+select Id_Papel as 'Id do Papel', Filme.Titulo as 'Título do Filme', Concat(Ator.Nome,' ', Ator.Apelido) as 'Nome do Ator'
+from Papel, Filme, Ator
+where Papel.Id_Filme = Filme.Id_Filme and Papel.Id_Ator = Ator.Id_Ator
+
+CREATE VIEW `ViewRealizador` AS
+    SELECT
+        `Realizador`.`Id_Realizador` AS `Id_Realizador`,
+        CONCAT(`Realizador`.`Nome`,
+                ' ',
+                `Realizador`.`Apelido`) AS `Nome Do Realizador`,
+        YEAR(CURRENT_TIMESTAMP()) - YEAR(`Realizador`.`DataNasc`) AS `Idade`,
+        `Realizador`.`Sexo` AS `Sexo`,
+        `Pais`.`Nacionalidade` AS `Nacionalidade`
+    FROM
+        (`Realizador`
+        JOIN `Pais`)
+    WHERE
+        `Realizador`.`Nacionalidade` = `Pais`.`Id_Pais`
+
+
+
+# contar aparições
+Select concat(Nome, ' ', Apelido) as 'Nome do Ator', count(Id_Papel) as 'Aparições'
+from Ator, Papel
+where Ator.Id_Ator = Papel.Id_Ator
+group by Papel.Id_Ator
+
+#Contar Nacionalidades--------
+select Nacionalidade , Count(Nacionalidade) as 'Atores Existentes'
+From ViewAtor
+group by Nacionalidade
+
+# pesquisa por genero
+select `Id do Filme`, `Título do Filme`
+From ViewFilme
+where Genero = 'Ação'
+
+# pesquisa por intervalo de idades
+SELECT * FROM PSIFLIX.ViewAtor
+where Idade between 20 and 50
+
+# Pesquisa por Ator mais velho
+SELECT Nome, Idade
+FROM ViewAtor
+where Idade = (select max(Idade) from ViewAtor)
+
+select Id_Ator,Nome
+from ViewAtor
+where Nome like '%a%'
+
+select Avg(Idade) as 'Média das Idades'
+from ViewAtor
+
+ALTER TABLE Pais
+ADD COLUMN codpais VARCHAR(45) NULL;
+
+REVOKE Select from Prof
+
+DELETE FROM Ator WHERE Id_Ator=1
+
+UPDATE Ator
+SET Nome = 'Arnold Shwarznegger'
+WHERE CustomerID = 1;
