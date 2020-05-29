@@ -2,4 +2,3 @@ Resposta:
 1) A função ob_start() ativa o buffer.
 A função session_start() definido no inicio de cada página permite o acesso a todos os itens através do array $_SESSION.
 A função ob_end_flush envia o que está no buffer.
-ola
