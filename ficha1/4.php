@@ -10,7 +10,7 @@ $a = 17;
 $b = 18;
 $c = 20;
 $med = ($a+$b+$c)/3;
-echo "A média de $a + $b + $c é ",$med);
+echo "A média de $a + $b + $c é  $med";
 ?>
 
   </body>
