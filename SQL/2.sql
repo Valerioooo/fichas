@@ -1,1 +1,1 @@
-create table ( Codigo int not null, Localidade varchar(15) not null )
+create table ( cliente int not null, Localidade varchar(15) not null )
