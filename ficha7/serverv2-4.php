@@ -5,7 +5,7 @@
 
   ob_implicit_flush();
   $address = "127.0.0.1";
-  $port = "8828";
+  $port = "8888";
 
   $cliente = array();
 
@@ -50,7 +50,7 @@ do{
     $cliente[] = $msgsock;
     $key = array_keys($cliente, $msgsock);
 
-    echo "\n Um cliente estabeleceu a ligação - cliente numero: $key[0] \n";
+    echo "\n Um cliente ".socket_getpeername($sock, $msgsock, $port), "estabeleceu a ligação - cliente numero: $key[0] \n";
 
     $msg = "\nBem-Vindo ao PHP server socket V2 - Multi - Cliente. \n\r".
     "Voce é o cliente numero: $key[0] \n\r".
@@ -76,7 +76,7 @@ do{
         unset($cliente[$key]);
         break;
       } else if($buf == 'shutdown'){
-          socket_shutdown($sock);
+          socket_shutdown($sock,2);
         }
 
       $talkback = "Cliente $key disse: '$buf' \n";
