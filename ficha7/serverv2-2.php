@@ -5,7 +5,7 @@
 
   ob_implicit_flush();
   $address = "127.0.0.1";
-  $port = "8828";
+  $port = "8888";
 
   $cliente = array();
 
@@ -50,7 +50,7 @@ do{
     $cliente[] = $msgsock;
     $key = array_keys($cliente, $msgsock);
 
-    echo "\n Um cliente estabeleceu a ligação - cliente numero: $key[0] \n";
+    echo "\n Um cliente estabeleceu a ligação - cliente numero: $key[0] \n Neste momento esta(ao) ", $key[0]+1 ," cliente(s) conectado(s) ao servidor";
 
     $msg = "\nBem-Vindo ao PHP server socket V2 - Multi - Cliente. \n\r".
     "Voce é o cliente numero: $key[0] \n\r".

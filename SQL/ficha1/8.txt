@@ -1,0 +1,1 @@
+A base de dados utilizada é a base de dados Colaboradores.

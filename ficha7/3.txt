@@ -1,0 +1,1 @@
+os resultados obtidos foi o incremento do array $key na posição 0 que significa o numero do cliente conectado.

@@ -6,7 +6,7 @@
   ob_implicit_flush();
   $address = "127.0.0.1";
   $port = "8888";
-
+  $numat = 0;
   $cliente = array();
 
   if( ($sock = socket_create(AF_INET, SOCK_STREAM, 0)) === false){
@@ -32,6 +32,7 @@ do{
   $write = array();
   $expect = array();
   $tv_sec = NULL;
+
 
   $read = array_merge($read, $cliente);
 
@@ -74,6 +75,7 @@ do{
       if($buf == 'quit'){
         socket_close($client);
         unset($cliente[$key]);
+
         break;
       } else if($buf == 'shutdown'){
           socket_shutdown($sock,2);
