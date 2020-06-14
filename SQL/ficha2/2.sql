@@ -11,7 +11,7 @@ FROM Distrito
 WHERE CodDistrito < 10
 
 c)
-<--- Assumindo que o codigo de distrito de Viseu é 9
+<--- Assumindo que o codigo de distrito de Viseu é 9 ------------
 
 SELECT CodConcelho, nomeConcelho
 From Concelho
