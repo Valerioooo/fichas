@@ -49,7 +49,7 @@ do{
     }
     $cliente[] = $msgsock;
     $key = array_keys($cliente, $msgsock);
-    
+
     echo "\n Um cliente estabeleceu a ligação - cliente numero: $key[0] \n Neste momento esta(ao) ", $key[0]+1 ," cliente(s) conectado(s) ao servidor";
 
     $msg = "\nBem-Vindo ao PHP server socket V2 - Multi - Cliente. \n\r".
@@ -72,7 +72,7 @@ do{
       }
 
       if($buf == 'quit'){
-        echo "Cliente $key disconectou-se do servidor \n";
+        echo "Cliente $key disconectou-se do Servidor \n";
         socket_close($client);
         unset($cliente[$key]);
         break;
