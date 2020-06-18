@@ -5,7 +5,7 @@
 
   ob_implicit_flush();
   $address = "127.0.0.1";
-  $port = "8886";
+  $port = "8888";
 
   $cliente = array();
 
@@ -85,13 +85,8 @@ do{
         }
 
       $talkback = "Cliente $key disse: '$buf' \n";
-
-
-			foreach ($cliente as $key) {
-				socket_write($key,$talkback, strlen($talkback));
-			}
-			unset($key);
-      echo "Cliente $key disse: '$buf' \n";
+			socket_write($client, $talkback, strlen($talkback));
+			echo "Cliente $key disse: '$buf' \n";
     }
   }
 }while(true);

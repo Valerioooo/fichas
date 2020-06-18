@@ -1,11 +1,11 @@
-j<?php
+<?php
   error_reporting(E_ALL);
 
   set_time_limit(0);
 
   ob_implicit_flush();
   $address = "127.0.0.1";
-  $port = "8886";
+  $port = "8888";
 
   $cliente = array();
 
@@ -89,7 +89,7 @@ do{
 			foreach ($cliente as $key2) {
 				socket_write($key2,$talkback, strlen($talkback));
 			}
-			
+
       echo "Cliente $key disse: '$buf' \n";
     }
   }
