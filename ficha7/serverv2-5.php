@@ -5,7 +5,7 @@ j<?php
 
   ob_implicit_flush();
   $address = "127.0.0.1";
-  $port = "8888";
+  $port = "8886";
 
   $cliente = array();
 
@@ -52,7 +52,7 @@ do{
     $key = array_keys($cliente, $msgsock);
 		$cont = count($cliente);
 
-    echo "\n Um cliente estabeleceu a ligação - cliente numero: $key[0] \n";
+    echo "\n Um cliente com ip ", socket_getpeername($sock, $cliente)   ," estabeleceu a ligação - cliente numero: $key[0] \n";
 		echo "Neste momento esta(ao) " ,$cont, " clientes conectado(s) ao servidor";
 
     $msg = "\n Bem-Vindo ao PHP server socket V2 - Multi - Cliente. \n\r".
@@ -75,7 +75,6 @@ do{
       }
 
       if($buf == 'quit'){
-
 				echo "\n O cliente $key disconectou-se!\n";
 				socket_close($client);
         unset($cliente[$key]);
@@ -85,7 +84,12 @@ do{
         }
 
       $talkback = "Cliente $key disse: '$buf' \n";
-      socket_write($client, $talkback, strlen($talkback));
+
+
+			foreach ($cliente as $key) {
+				socket_write($key,$talkback, strlen($talkback));
+			}
+			unset($key);
       echo "Cliente $key disse: '$buf' \n";
     }
   }

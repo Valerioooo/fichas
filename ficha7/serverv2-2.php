@@ -1,4 +1,4 @@
-<?php
+j<?php
   error_reporting(E_ALL);
 
   set_time_limit(0);
@@ -32,6 +32,7 @@ do{
   $write = array();
   $expect = array();
   $tv_sec = NULL;
+	$cont = 0;
 
   $read = array_merge($read, $cliente);
 
@@ -49,10 +50,12 @@ do{
     }
     $cliente[] = $msgsock;
     $key = array_keys($cliente, $msgsock);
+		$cont = count($cliente);
 
-    echo "\n Um cliente estabeleceu a ligação - cliente numero: $key[0] \n Neste momento esta(ao) ", $key[0]+1 ," cliente(s) conectado(s) ao servidor";
+    echo "\n Um cliente estabeleceu a ligação - cliente numero: $key[0] \n";
+		echo "Neste momento esta(ao) " ,$cont, " clientes conectado(s) ao servidor";
 
-    $msg = "\nBem-Vindo ao PHP server socket V2 - Multi - Cliente. \n\r".
+    $msg = "\n Bem-Vindo ao PHP server socket V2 - Multi - Cliente. \n\r".
     "Voce é o cliente numero: $key[0] \n\r".
     "Para sair, digite 'quit'. Para desligar o servidor digite 'shutdown'. \n\r";
 
