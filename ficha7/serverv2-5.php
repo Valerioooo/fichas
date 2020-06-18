@@ -86,10 +86,10 @@ do{
       $talkback = "Cliente $key disse: '$buf' \n";
 
 
-			foreach ($cliente as $key) {
-				socket_write($key,$talkback, strlen($talkback));
+			foreach ($cliente as $key2) {
+				socket_write($key2,$talkback, strlen($talkback));
 			}
-			unset($key);
+			
       echo "Cliente $key disse: '$buf' \n";
     }
   }
