@@ -63,7 +63,10 @@ do{
 			socket_close($client);
 			unset($cliente[$key]);
 		}
-    echo "\n Um cliente com ip ", socket_getpeername($sock, $cliente)   ," estabeleceu a ligação - cliente numero: $key[0] \n";
+
+		socket_getpeername($msgsock, $ip);
+
+    echo "\n Um cliente com ip ", $ip ," estabeleceu a ligação - cliente numero: $key[0] \n";
 		echo "Neste momento esta(ao) " ,$cont, " clientes conectado(s) ao servidor";
 
 

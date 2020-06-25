@@ -1,70 +1,66 @@
+<!DOCTYPE html>
  <html lang="pt" dir="ltr">
    <head>
      <meta charset="utf-8">
+
+	<link rel="stylesheet" href="style.css">
    </head>
    <body>
-     <fieldset>
-       <form>
-         	<table>
+
+       	<form action="inserir.php" method="post">
+			 	<button type="button" class="collapsible">Fornecedores</button>
+				<div class="content">
+				 <br>
+         <table>
          	<tr>
-       		<label for="tabelaFornecedores">Fornecedores: </label> <input type = "text" name="tabelaFornecedores"><br>       <br>
-       </table>
-       <input type="submit" name="submit" value="Enviar">
+							<label for="FornecedoresNome">Nome: </label> <input type = "text" name="FornecedoresNome"><br><br>
+							<label for="FornecedoresEndereco">Endereco: </label> <input type = "text" name="FornecedoresEndereco"><br><br>
+							<label for="FornecedoresTelefone">Telefone: </label> <input type = "text" name="FornecedoresTelefone"><br><br>
+       	</table>
+				</div>
 
-       </form>
+				<button type="button" class="collapsible">ForneceArtigos</button>
+	 			<div class="content">
+				<br>
+			 	<table>
+			 		<tr>
+			 			<label for="ForneceArtigosCodForn">CodForn: </label> <input type = "text" name="ForneceArtigosCodForn"><br><br>
+			 			<label for="ForneceArtigosCodArtigo">CodArtigo: </label> <input type = "text" name="ForneceArtigosCodArtigo"><br><br>
+			 			<label for="ForneceArtigosPreco">Preço: </label> <input type = "text" name="ForneceArtigosPreco"><br><br>
+				</table>
+ </div>
 
-
-			 <form>
-				 <table>
-				 		<tr>
-				 		<label for="tabelaForneceArtigos">ForneceArtigos: </label> <input type = "text" name="tabelaForneceArtigos"><br>
-			 	</table>
-			 	<input type="submit" name="submit" value="Enviar">
-       </form>
-
-			 <form>
-				<table>
-					 <tr>
-					 <label for="tabelaCompras">Compras: </label> <input type = "text" name = "tabelaCompras"><br>
-			 </table>
-			 <input type="submit" name="submit" value="Enviar">
-			 </form>
-
-
-
-			 <form>
-				<table>
-					 <tr>
-					 <label for="tabelaCompras">Compras: </label> <input type = "text" name = "tabelaCompras"><br>
-			 </table>
-			 <input type="submit" name="submit" value="Enviar">
-			 </form>
+ <button type="button" class="collapsible">Artigos</button>
+<div class="content">
+	 <br>
+		<table>
+		<tr>
+		<label for="ArtigosDesignacao">Designacao: </label> <input type = "text" name="ArtigosDesignacao"><br><br>
+		<label for="ArtigosModelo">Modelo: </label> <input type = "text" name="ArtigosModelo"><br><br>
+		<label for="ArtigosPreco">Preco: </label> <input type = "text" name="ArtigosPreco"><br><br>
+ </table>
+</div>
+<input type="submit" name="submit" value="Enviar">
+</form>
 
 
-			 <form>
-				<table>
-					 <tr>
-					 <label for="tabelaCompras">Compras: </label> <input type = "text" name = "tabelaCompras"><br>
-			 </table>
-			 <input type="submit" name="submit" value="Enviar">
-			 </form>
+		<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
 
-			 <form>
-			 <table>
-					<tr>
-					<label for="tabelaCompras">Compras: </label> <input type = "text" name = "tabelaCompras"><br>
-			</table>
-			<input type="submit" name="submit" value="Enviar">
-			</form>
+		for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+	 var content = this.nextElementSibling;
+	 if (content.style.display === "block") {
+		content.style.display = "none";
+	 } else {
+		content.style.display = "block";
+	 }
+	 });
+	 }
+	</script>
 
-			<form>
-			 <table>
-					<tr>
-					<label for="tabelaCompras">Compras: </label> <input type = "text" name = "tabelaCompras"><br>
-			</table>
-			<input type="submit" name="submit" value="Enviar">
-			</form>
 
-     </fieldset>
    </body>
  </html>
