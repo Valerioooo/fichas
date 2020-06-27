@@ -49,7 +49,7 @@
     			<a class="dropdown-item" href="#">Remover</a>
   			</div>
 			</div>
-    </li>
+    </li> 
 		<li class="nav-item">
 			<div class="dropdown">
   			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
