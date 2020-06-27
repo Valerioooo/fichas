@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
   <title>Projeto Final</title>
   <meta charset="utf-8">
@@ -103,14 +103,14 @@
 
     </li>
   </ul>
-	<button class="btn btn-secondary my-2 my-sm-0" href="login.php">Login</button>
+	<a href="login.php"><button class="btn btn-secondary my-2 my-sm-0">Login</button></a>
 </nav>
 <br>
 
 <div class="container-fluid">
   <h3>Página Inicial</h3>
   <p>Dirija-se ao menu para visualizar as tabelas e fazer as aleterações necessárias.</p>
-  <p>The navbar-expand-xl|lg|md|sm class determines when the navbar should stack vertically (on extra large, large, medium or small screens).</p>
+  <p>.</p>
 </div>
 
 </body>
