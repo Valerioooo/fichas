@@ -48,7 +48,7 @@
     			<a class="dropdown-item" href="#">Inserir</a>
     			<a class="dropdown-item" href="#">Remover</a>
   			</div>
-			</div> 
+			</div>  
     </li> 
 		<li class="nav-item">
 			<div class="dropdown">
