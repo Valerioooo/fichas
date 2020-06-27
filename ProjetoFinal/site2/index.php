@@ -41,7 +41,7 @@
     <li class="nav-item">
 			<div class="dropdown">
   			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-    		Artigos
+    		Artigos 
   			</button>
   			<div class="dropdown-menu">
     			<a class="dropdown-item" href="#">Listar Tabela</a>
