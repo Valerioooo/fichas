@@ -2,7 +2,7 @@
 session_start();
 
 
-$ligacao = mysqli_connect('localhost',$_POST['nome'], $_POST['passe']);
+$ligacao = mysqli_connect('localhost',$_POST['user'], $_POST['password']);
 
 mysqli_select_db($ligacao, 'Empresa');
 

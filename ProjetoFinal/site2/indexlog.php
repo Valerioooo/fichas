@@ -1,4 +1,4 @@
-<?php if ($ses !=1) {
+<?php if ($ses['ligado'] != 1) {
 	header("location: index.php");
 }
 ?>
