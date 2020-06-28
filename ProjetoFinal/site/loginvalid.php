@@ -7,7 +7,9 @@ mysqli_select_db($ligacao, 'Empresa');
 
 if($ligacao){
 	$ses['ligado'] = 1 ;
+	$ses['con'] = $ligacao;
 	$ses['user'] = $_POST['user'];
+	$ses['passwd'] = $_POST['password'];
 	$_SESSION = $ses;
 	header("location: /fichas/ProjetoFinal/site/index.php");
 

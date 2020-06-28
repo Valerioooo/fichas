@@ -18,12 +18,12 @@ error_reporting(0);
 
 <nav class="navbar navbar-expand-sm bg-dark">
   <ul class="navbar-nav mr-auto">
-		<a href="/fichas/ProjetoFinal/site/index.php"> <button type="button" class="btn btn-primary">
+		<a href="/fichas/ProjetoFinal/site/index.php"> <button type="button" class="btn btn-outline-secondary">
 		Inicio
 		</button></a>
     <li class="nav-item">
 			<div class="dropdown">
-  			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+  			<button type="button" class="btn btn-outline-success dropdown-toggle" data-toggle="dropdown">
     		Fornecedores
   			</button>
   			<div class="dropdown-menu">
@@ -36,7 +36,7 @@ error_reporting(0);
     </li>
     <li class="nav-item">
 			<div class="dropdown">
-  			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+  			<button type="button" class="btn btn-outline-success dropdown-toggle" data-toggle="dropdown">
     		ForneceArtigos
   			</button>
   			<div class="dropdown-menu">
@@ -48,7 +48,7 @@ error_reporting(0);
     </li>
     <li class="nav-item">
 			<div class="dropdown">
-  			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+  			<button type="button" class="btn btn-outline-success dropdown-toggle" data-toggle="dropdown">
     		Artigos
   			</button>
   			<div class="dropdown-menu">
@@ -60,7 +60,7 @@ error_reporting(0);
     </li>
 		<li class="nav-item">
 			<div class="dropdown">
-  			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+  			<button type="button" class="btn btn-outline-success dropdown-toggle" data-toggle="dropdown">
     		Compras
   			</button>
   			<div class="dropdown-menu">
@@ -73,7 +73,7 @@ error_reporting(0);
     </li>
 		<li class="nav-item">
 			<div class="dropdown">
-  			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+  			<button type="button" class="btn btn-outline-success dropdown-toggle" data-toggle="dropdown">
     		Clientes
   			</button>
   			<div class="dropdown-menu">
@@ -86,7 +86,7 @@ error_reporting(0);
     </li>
 		<li class="nav-item">
 			<div class="dropdown">
-  			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+  			<button type="button" class="btn btn-outline-success dropdown-toggle" data-toggle="dropdown">
     		Vendas
   			</button>
   			<div class="dropdown-menu">
@@ -99,7 +99,7 @@ error_reporting(0);
     </li>
 		<li class="nav-item">
 			<div class="dropdown">
-  			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+  			<button type="button" class="btn btn-outline-success dropdown-toggle" data-toggle="dropdown">
     		DetalhesVendas
   			</button>
   			<div class="dropdown-menu">
@@ -113,9 +113,9 @@ error_reporting(0);
   </ul>
 	<?php
 	if ($_SESSION['ligado'] == 1) {
-		echo '<a href="/fichas/ProjetoFinal/site/logout.php"> <button class="btn btn-secondary my-2 my-sm-0"> '.$_SESSION['user'].' LogOut</button></a>';
+		echo '<a href="/fichas/ProjetoFinal/site/logout.php"> <button class="btn btn-outline-danger my-2 my-sm-0"> '.$_SESSION['user'].' LogOut</button></a>';
 	} else {
-		echo '<a href="/fichas/ProjetoFinal/site/login.php"> <button class="btn btn-secondary my-2 my-sm-0">LogIn</button></a>';
+		echo '<a href="/fichas/ProjetoFinal/site/login.php"> <button class="btn btn-outline-info my-2 my-sm-0"> LogIn</button></a>';
 	}
 ?>
 
@@ -125,7 +125,7 @@ error_reporting(0);
 <div class="container-fluid">
   <h3>Página Inicial</h3>
   <p>Dirija-se ao menu para visualizar as tabelas e fazer as aleterações necessárias.</p>
-  <p>.</p>
+  <p>    </p>
 </div>
 
 </body>

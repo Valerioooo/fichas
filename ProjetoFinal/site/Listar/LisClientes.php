@@ -1,6 +1,6 @@
 <?php
 session_start();
-//error_reporting(0);
+error_reporting(0);
 if ($_SESSION['ligado'] != 1) {
 	header("location: /fichas/ProjetoFinal/site/login.php");
 }
@@ -127,12 +127,13 @@ if ($_SESSION['ligado'] != 1) {
 <br>
 
 <div class="container-fluid">
-  <h3>Inserir Fornecedores</h3>
+  <h3>listar Clientes</h3>
 	<table class="table">
 		<thead class="thead-dark">
 			<tr>
-				<th scope="col">Codigo de Fornecedor</th>
-				<th scope="col">Endereço</th>
+				<th scope="col">Codigo de Cliente</th>
+				<th scope="col">Nome</th>
+				<th scope="col">Morada</th>
 				<th scope="col">Telefone</th>
 			</tr>
 		</thead>
@@ -141,13 +142,14 @@ if ($_SESSION['ligado'] != 1) {
 $ligacao = mysqli_connect('localhost',$_SESSION['user'], $_SESSION['passwd']);
 
 
-$listagem = mysqli_query($ligacao, "SELECT * FROM Empresa.Fornecedores");
+$listagem = mysqli_query($ligacao, "SELECT * FROM Empresa.Clientes");
 
 while ($linha = mysqli_fetch_array($listagem)) {
 
 	echo "<tr>
-					<td>".$linha['CodForn']."</td>
-					<td>".$linha['Endereco']."</td>
+					<td>".$linha['CodCliente']."</td>
+					<td>".$linha['Nome']."</td>
+					<td>".$linha['Morada']."</td>
 					<td>".$linha['Telefone']."</td>
 				</tr>";
 }
