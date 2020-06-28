@@ -20,7 +20,7 @@
   			</button>
   			<div class="dropdown-menu">
     			<a class="dropdown-item" href="#">Listar Fornecedores</a>
-    			<a class="dropdown-item" href="login.html">Inserir Fornecedores</a>
+    			<a class="dropdown-item" href="#">Inserir Fornecedores</a>
     			<a class="dropdown-item" href="#">Remover Fornecedores</a>
   			</div>
 			</div>
@@ -103,7 +103,7 @@
 
     </li>
   </ul>
-	<a href="login.html"><button class="btn btn-secondary my-2 my-sm-0">Login</button></a>
+	<a href="login.php"><button class="btn btn-secondary my-2 my-sm-0">Login</button></a>
 </nav>
 <br>
 

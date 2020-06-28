@@ -1,3 +1,8 @@
+<?php if ($ses !=1) {
+	header("location: index.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -20,7 +25,7 @@
   			</button>
   			<div class="dropdown-menu">
     			<a class="dropdown-item" href="#">Listar Fornecedores</a>
-    			<a class="dropdown-item" href="login.html">Inserir Fornecedores</a>
+    			<a class="dropdown-item" href="Inserir/InsFornecedores.php">Inserir Fornecedores</a>
     			<a class="dropdown-item" href="#">Remover Fornecedores</a>
   			</div>
 			</div>
@@ -103,7 +108,7 @@
 
     </li>
   </ul>
-	<a href="login.html"><button class="btn btn-secondary my-2 my-sm-0">Login</button></a>
+	<a href="logout.php"><button class="btn btn-secondary my-2 my-sm-0">LogOut</button></a>
 </nav>
 <br>
 
