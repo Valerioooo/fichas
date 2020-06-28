@@ -52,7 +52,9 @@ do{
     $key = array_keys($cliente, $msgsock);
 		$cont = count($cliente);
 
-    echo "\n Um cliente com ip ", socket_getpeername($sock, $cliente)   ," estabeleceu a ligação - cliente numero: $key[0] \n";
+		socket_getpeername($msgsock, $ip)
+
+    echo "\n Um cliente com ip ", $ip   ," estabeleceu a ligação - cliente numero: $key[0] \n";
 		echo "Neste momento esta(ao) " ,$cont, " clientes conectado(s) ao servidor";
 
     $msg = "\n Bem-Vindo ao PHP server socket V2 - Multi - Cliente. \n\r".

@@ -15,4 +15,6 @@ __Principal__
     - cria a sessão
     - valida o utilizador e a passe
     - Passa por post para o indexlog.php
-    - 
+		if ($_SESSION['ligado'] != 1) {
+			header("location: /index.php");
+		}
