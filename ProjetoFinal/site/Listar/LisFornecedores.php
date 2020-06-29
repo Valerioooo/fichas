@@ -135,14 +135,16 @@ if ($_SESSION['ligado'] != 1) {
 				<th scope="col">Nome</th>
 				<th scope="col">Endereço</th>
 				<th scope="col">Telefone</th>
+				<th scope="col">Ação</th>
 			</tr>
 		</thead>
 			  <tbody>
 <?php
 $ligacao = mysqli_connect('localhost',$_SESSION['user'], $_SESSION['passwd']);
 
+$tabela = "Fornecedores";
 
-$listagem = mysqli_query($ligacao, "SELECT * FROM Empresa.Fornecedores");
+$listagem = mysqli_query($ligacao, "SELECT * FROM Empresa.$tabela");
 
 while ($linha = mysqli_fetch_array($listagem)) {
 
@@ -151,7 +153,7 @@ while ($linha = mysqli_fetch_array($listagem)) {
 					<td>".$linha['Nome']."</td>
 					<td>".$linha['Endereco']."</td>
 					<td>".$linha['Telefone']."</td>
-				</tr>";
+					<td><a href='/fichas/ProjetoFinal/site/Remover/rem.php?id=".$linha['CodForn']."&tabela=".$tabela."'\><img src='/fichas/ProjetoFinal/site/img/delete.png' width='20' height='20'></a></td></tr>";
 }
  ?>
 </tr>

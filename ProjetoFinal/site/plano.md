@@ -14,5 +14,17 @@ __Principal__
     - cria a sessão
     - valida o utilizador e a passe
     - Passa por post para o index.php
+
+
 	__Importante__
 	-ter a coluna ação para editar e remover linhas da tabela
+
+
+  - rem.php
+    - Artigos __V__
+    - Clientes __V__
+    - Compras
+    - DetalhesVendas __V__
+    - ForneceArtigos __V__
+    - Fornecedores
+    - Vendas __V__

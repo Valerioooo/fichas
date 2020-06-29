@@ -1,9 +1,8 @@
 <?php
 session_start();
 
-$ligacao = mysqli_connect('localhost',$_POST['user'], $_POST['password']);
+$ligacao = mysqli_connect('localhost',$_POST['user'], $_POST['password'],"Empresa");
 
-mysqli_select_db($ligacao, 'Empresa');
 
 if($ligacao){
 	$ses['ligado'] = 1 ;

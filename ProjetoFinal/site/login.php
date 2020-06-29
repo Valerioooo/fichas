@@ -28,7 +28,7 @@ error_reporting(0);
     </div>
     <div class="form-group form-check">
     </div>
-    <button type="submit" class="btn btn-primary">Entrar</button>
+    <button type="submit" class="btn btn-outline-info">Entrar</button>
 	</form>
 
 	<?php
