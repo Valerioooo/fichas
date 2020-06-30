@@ -6,26 +6,35 @@ $tabela = $_REQUEST['tabela'];
 
 
 switch ($tabela) {
-	case 'Artigos':$cod='CodArtigo';break;
+	case 'Artigos': $cod='CodArtigo';break;
 
-	case 'Clientes':$cod='CodCliente';break;
+	case 'Clientes': $cod='CodCliente';break;
 
-	case 'Compras':$cod='CodArtigo';break;
+	case 'Compras': $cod='CodArtigo';break;
 
-	case 'DetalhesVendas':$cod='NFactura';break;
+	case 'DetalhesVendas': $cod='NFactura';break;
 
-	case 'ForneceArtigos':$cod='CodArtigo';break;
+	case 'ForneceArtigos': $cod='CodArtigo';break;
 
-	case 'Fornecedores':$cod='CodForn';break;
+	case 'Fornecedores': $cod='CodForn';break;
 
 	case 'Vendas':$cod='NFactura';break;
 
+	default: echo "não funcionou";
+
 }
 
+$ligacao = mysqli_connect('localhost',$_SESSION['user'], $_SESSION['passwd'], "Empresa");
 
-$ligacao = mysqli_connect('localhost',$_SESSION['user'], $_SESSION['passwd'],"Empresa");
 
-mysqli_query($ligacao, "DELETE FROM ".$tabela." WHERE ".$cod." = ".$id." ");
+
+$query = "DELETE FROM ".$tabela." WHERE ".$cod." = ".$id;
+
+echo $query;
+
+mysqli_query($ligacao, $query);
+
+mysqli_close($ligacao);
 
 header("location: /fichas/ProjetoFinal/site/Listar/Lis".$tabela.".php");
  ?>
