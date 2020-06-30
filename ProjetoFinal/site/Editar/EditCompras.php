@@ -137,12 +137,13 @@ $linha = mysqli_fetch_array($query);
 <div class="container-fluid">
   <h3>Editar Artigo</h3>
 <?php
+
  echo "
 <form class='needs-validation justify-content-center' novalidate method='post' action='/fichas/ProjetoFinal/site/Editar/edit.php?id=".$id."&tabela=".$tabela."'>
 <div class='form-row'>
     <div class='col-md-1 mb-1'>
       <label for='validationCustom01'>CodArtigo</label>
-      <input type='text' class='form-control' name='Artigos_CodArtigo' value='".$linha['CodArtigo']."' readonly>
+      <input type='text' class='form-control' name='Artigos_CodArtigo' value='".$linha['CodArtigo']."' readonlyd>
     </div>
     <div class='col-md-3 mb-1'>
       <label for='validationCustom01'>Designação</label>

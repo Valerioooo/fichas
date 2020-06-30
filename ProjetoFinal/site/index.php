@@ -29,8 +29,7 @@ error_reporting(0);
   			<div class="dropdown-menu">
     			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Listar/LisFornecedores.php">Listar Fornecedores</a>
     			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Inserir/InsFornecedores.php">Inserir Fornecedores</a>
-    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Remover/RemFornecedores.php">Remover Fornecedores</a>
-  			</div>
+    			  			</div>
 			</div>
 
     </li>
@@ -42,7 +41,6 @@ error_reporting(0);
   			<div class="dropdown-menu">
     			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Listar/LisForneceArtigos.php">Listar Tabela</a>
     			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Inserir/InsForneceArtigos.php">Inserir</a>
-    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Remover/RemForneceartigos.php">Remover</a>
   			</div>
 			</div>
     </li>
@@ -54,7 +52,6 @@ error_reporting(0);
   			<div class="dropdown-menu">
     			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Listar/LisArtigos.php">Listar Artigos</a>
     			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Inserir/InsArtigos.php">Inserir Artigos</a>
-    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Remover/RemArtigos.php">Remover Artigos</a>
   			</div>
 			</div>
     </li>
@@ -66,7 +63,6 @@ error_reporting(0);
   			<div class="dropdown-menu">
     			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Listar/LisCompras.php">Listar Compras</a>
     			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Inserir/InsCompras.php">Inserir Compras</a>
-    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Remover/RemCompras.php">Remover Compras</a>
   			</div>
 			</div>
 
@@ -79,7 +75,6 @@ error_reporting(0);
   			<div class="dropdown-menu">
     			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Listar/LisClientes.php">Listar Clientes</a>
     			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Inserir/InsClientes.php">Inserir Clientes</a>
-    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Remover/RemClientes.php">Remover Clientes</a>
   			</div>
 			</div>
 
@@ -92,7 +87,6 @@ error_reporting(0);
   			<div class="dropdown-menu">
     			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Listar/LisVendas.php">Listar Vendas</a>
     			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Inserir/InsVendas.php">Inserir Vendas</a>
-    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Remover/RemVendas.php">Remover Vendas</a>
   			</div>
 			</div>
 
@@ -105,7 +99,6 @@ error_reporting(0);
   			<div class="dropdown-menu">
     			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Listar/LisDetalhesVendas.php">Listar Tabela</a>
     			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Inserir/InsDetalhesVendas.php">Inserir</a>
-    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Remover/RemDetalhesVendas.php">Remover</a>
   			</div>
 			</div>
 
@@ -115,7 +108,7 @@ error_reporting(0);
 	if ($_SESSION['ligado'] == 1) {
 		echo '<a href="/fichas/ProjetoFinal/site/logout.php"> <button class="btn btn-outline-danger my-2 my-sm-0"> '.$_SESSION['user'].' LogOut</button></a>';
 	} else {
-		echo '<a href="/fichas/ProjetoFinal/site/login.php"> <button class="btn btn-outline-info my-2 my-sm-0"> LogIn</button></a>';
+		echo '<a href="/fichas/ProjetoFinal/site/login.php"> <button class="btn btn-outline-info my-2 my-sm-0">LogIn</button></a>';
 	}
 ?>
 

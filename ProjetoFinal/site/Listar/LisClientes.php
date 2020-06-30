@@ -33,7 +33,6 @@ if ($_SESSION['ligado'] != 1) {
 	  			<div class="dropdown-menu">
 	    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Listar/LisFornecedores.php">Listar Fornecedores</a>
 	    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Inserir/InsFornecedores.php">Inserir Fornecedores</a>
-	    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Remover/RemFornecedores.php">Remover Fornecedores</a>
 	  			</div>
 				</div>
 
@@ -46,7 +45,6 @@ if ($_SESSION['ligado'] != 1) {
 	  			<div class="dropdown-menu">
 	    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Listar/LisForneceArtigos.php">Listar Tabela</a>
 	    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Inserir/InsForneceArtigos.php">Inserir</a>
-	    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Remover/RemForneceartigos.php">Remover</a>
 	  			</div>
 				</div>
 	    </li>
@@ -58,7 +56,6 @@ if ($_SESSION['ligado'] != 1) {
 	  			<div class="dropdown-menu">
 	    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Listar/LisArtigos.php">Listar Artigos</a>
 	    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Inserir/InsArtigos.php">Inserir Artigos</a>
-	    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Remover/RemArtigos.php">Remover Artigos</a>
 	  			</div>
 				</div>
 	    </li>
@@ -70,7 +67,6 @@ if ($_SESSION['ligado'] != 1) {
 	  			<div class="dropdown-menu">
 	    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Listar/LisCompras.php">Listar Compras</a>
 	    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Inserir/InsCompras.php">Inserir Compras</a>
-	    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Remover/RemCompras.php">Remover Compras</a>
 	  			</div>
 				</div>
 
@@ -83,7 +79,6 @@ if ($_SESSION['ligado'] != 1) {
 	  			<div class="dropdown-menu">
 	    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Listar/LisClientes.php">Listar Clientes</a>
 	    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Inserir/InsClientes.php">Inserir Clientes</a>
-	    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Remover/RemClientes.php">Remover Clientes</a>
 	  			</div>
 				</div>
 
@@ -96,7 +91,6 @@ if ($_SESSION['ligado'] != 1) {
 	  			<div class="dropdown-menu">
 	    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Listar/LisVendas.php">Listar Vendas</a>
 	    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Inserir/InsVendas.php">Inserir Vendas</a>
-	    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Remover/RemVendas.php">Remover Vendas</a>
 	  			</div>
 				</div>
 
@@ -109,7 +103,6 @@ if ($_SESSION['ligado'] != 1) {
 	  			<div class="dropdown-menu">
 	    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Listar/LisDetalhesVendas.php">Listar Tabela</a>
 	    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Inserir/InsDetalhesVendas.php">Inserir</a>
-	    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Remover/RemDetalhesVendas.php">Remover</a>
 	  			</div>
 				</div>
 
@@ -153,7 +146,8 @@ while ($linha = mysqli_fetch_array($listagem)) {
 					<td>".$linha['Nome']."</td>
 					<td>".$linha['Morada']."</td>
 					<td>".$linha['Telefone']."</td>
-					<td><a href='/fichas/ProjetoFinal/site/Remover/rem.php?id=".$linha['CodCliente']."&tabela=".$tabela."'\><img src='/fichas/ProjetoFinal/site/img/delete.png' width='20' height='20'></a></td></tr>";
+					<td><a href='/fichas/ProjetoFinal/site/Editar/Edit".$tabela.".php?id=".$linha['CodCliente']."'\><img src='/fichas/ProjetoFinal/site/img/edit.png' width='20' height='20'></a>
+					<a href='/fichas/ProjetoFinal/site/Remover/rem.php?id=".$linha['CodCliente']."&tabela=".$tabela."'\><img src='/fichas/ProjetoFinal/site/img/delete.png' width='20' height='20'></a></td></tr>";
 }
  ?>
 </tr>

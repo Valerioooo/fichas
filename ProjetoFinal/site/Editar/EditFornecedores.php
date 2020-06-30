@@ -137,6 +137,7 @@ $linha = mysqli_fetch_array($query);
 <div class="container-fluid">
   <h3>Editar Artigo</h3>
 <?php
+
  echo "
 <form class='needs-validation justify-content-center' novalidate method='post' action='/fichas/ProjetoFinal/site/Editar/edit.php?id=".$id."&tabela=".$tabela."'>
 <div class='form-row'>

@@ -8,9 +8,9 @@ if ($_SESSION['ligado'] != 1) {
 
 $id = $_REQUEST['id'];
 
-$tabela = "Artigos";
+$tabela = "Clientes";
 
-$cod='CodArtigo';
+$cod='CodCliente';
 
 $ligacao = mysqli_connect('localhost',$_SESSION['user'], $_SESSION['passwd']);
 
@@ -130,33 +130,33 @@ $linha = mysqli_fetch_array($query);
 		echo '<a href="/fichas/ProjetoFinal/site/login.php"> <button class="btn btn-outline-info my-2 my-sm-0"> LogIn</button></a>';
 	}
 ?>
-
 </nav>
-<br>
 
+<br>
 <div class="container-fluid">
   <h3>Editar Artigo</h3>
 <?php
+
  echo "
 <form class='needs-validation justify-content-center' novalidate method='post' action='/fichas/ProjetoFinal/site/Editar/edit.php?id=".$id."&tabela=".$tabela."'>
 <div class='form-row'>
     <div class='col-md-1 mb-1'>
       <label for='validationCustom01'>CodArtigo</label>
-      <input type='text' class='form-control' name='Artigos_CodArtigo' value='".$linha['CodArtigo']."' readonly>
+      <input type='text' class='form-control' name='Clientes_CodCliente' value='".$linha['CodCliente']."' readonly>
     </div>
     <div class='col-md-3 mb-1'>
       <label for='validationCustom01'>Designação</label>
-      <input type='text' class='form-control' name='Artigos_Designacao' value='".$linha['Designacao']."' required>
+      <input type='text' class='form-control' name='Clientes_Nome' value='".$linha['Nome']."' required>
     </div>
 
 		<div class='col-md-1 mb-3'>
 			<label for='validationCustom01'>Modelo</label>
-			<input type='text' class='form-control' name='Artigos_Modelo' value='".$linha['Modelo']."' required>
+			<input type='text' class='form-control' name='Clientes_Morada' value='".$linha['Morada']."' required>
 		</div>
 
 		<div class='col-md-1 mb-3'>
 			<label for='validationCustom01'>Preço</label>
-			<input type='text' class='form-control' name='Artigos_Preco' value='".$linha['Preco']."' required>
+			<input type='text' class='form-control' name='Clientes_Telefone' value='".$linha['Telefone']."' required>
 		</div>
 
 </div>

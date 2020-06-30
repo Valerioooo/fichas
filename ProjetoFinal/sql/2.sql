@@ -10,7 +10,7 @@ create table Artigos(
   CodArtigo int Auto_increment PRIMARY KEY,
   Designacao varchar(30) not null,
   Modelo char(20) not null,
-  Preco decimal not null
+  Preco decimal(10,2) not null
 );
 
 create table Clientes(

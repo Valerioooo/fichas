@@ -10,7 +10,14 @@ switch ($tabela) {
 
 	case 'Clientes': $cod='CodCliente';break;
 
-	case 'Compras': $cod='CodArtigo';break;
+	case 'Compras': $cod='CodArtigo'; $cod2 ='CodForn';
+		$id2 = $_REQUEST['id2'];
+		$ligacao = mysqli_connect('localhost',$_SESSION['user'], $_SESSION['passwd'], "Empresa");
+		$query = "DELETE FROM ".$tabela." WHERE ".$cod." = ".$id." AND ".$cod2." = ".$id2."";
+		mysqli_query($ligacao, $query);
+		mysqli_close($ligacao);
+		header("location: /fichas/ProjetoFinal/site/Listar/Lis".$tabela.".php");
+		break;
 
 	case 'DetalhesVendas': $cod='NFactura';break;
 
@@ -29,8 +36,6 @@ $ligacao = mysqli_connect('localhost',$_SESSION['user'], $_SESSION['passwd'], "E
 
 
 $query = "DELETE FROM ".$tabela." WHERE ".$cod." = ".$id;
-
-echo $query;
 
 mysqli_query($ligacao, $query);
 
