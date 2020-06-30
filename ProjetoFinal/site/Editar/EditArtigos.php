@@ -1,6 +1,25 @@
 <?php
 session_start();
-error_reporting(0);
+//error_reporting(0);
+
+if ($_SESSION['ligado'] != 1) {
+	header("location: /fichas/ProjetoFinal/site/login.php");
+}
+
+$id = $_REQUEST['id'];
+
+$tabela = "Artigos";
+
+$cod='CodArtigo';
+
+$ligacao = mysqli_connect('localhost',$_SESSION['user'], $_SESSION['passwd']);
+
+$query = mysqli_query($ligacao, "SELECT * FROM Empresa.$tabela WHERE $cod = $id");
+
+$linha = mysqli_fetch_array($query);
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -123,53 +142,36 @@ error_reporting(0);
 <br>
 
 <div class="container-fluid">
-  <h3>Página Inicial</h3>
-	<form class="needs-validation" novalidate>
-  <div class="form-row">
-    <div class="col-md-6 mb-3">
-      <label for="validationCustom01">First name</label>
-      <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
+  <h3>Editar Artigo</h3>
+<?php
+ echo "
+<form class='needs-validation justify-content-center' novalidate action=>
+<div class='form-row'>
+    <div class='col-md-1 mb-1'>
+      <label for='validationCustom01'>CodArtigo</label>
+      <input type='text' class='form-control' nome='Artigos_CodArtigo' value=".$linha['CodArtigo']." required>
     </div>
-    <div class="col-md-6 mb-3">
-      <label for="validationCustom02">Last name</label>
-      <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
+    <div class='col-md-3 mb-1'>
+      <label for='validationCustom01'>Designação</label>
+      <input type='text' class='form-control' nome='Artigos_Designacao' value=".$linha['Designacao']." required>
     </div>
-  </div>
-  <div class="form-row">
-    <div class="col-md-6 mb-3">
-      <label for="validationCustom03">City</label>
-      <input type="text" class="form-control" id="validationCustom03" required>
-      <div class="invalid-feedback">
-        Please provide a valid city.
-      </div>
-    </div>
-    <div class="col-md-3 mb-3">
-      <label for="validationCustom04">State</label>
-      <select class="custom-select" id="validationCustom04" required>
-        <option selected disabled value="">Choose...</option>
-        <option>...</option>
-      </select>
-      <div class="invalid-feedback">
-        Please select a valid state.
-      </div>
-    </div>
-    <div class="col-md-3 mb-3">
-      <label for="validationCustom05">Zip</label>
-      <input type="text" class="form-control" id="validationCustom05" required>
-      <div class="invalid-feedback">
-        Please provide a valid zip.
-      </div>
-    </div>
-  </div>
-  <button class="btn btn-primary" type="submit">Editar</button>
-</form>
 
+		<div class='col-md-1 mb-3'>
+			<label for='validationCustom01'>Modelo</label>
+			<input type='text' class='form-control' nome='Artigos_Modelo' value=".$linha['Modelo']." required>
+		</div>
+
+		<div class='col-md-1 mb-3'>
+			<label for='validationCustom01'>Preço</label>
+			<input type='text' class='form-control' nome='Artigos_Preco' value=".$linha['Preco']." required>
+		</div>
+
+</div>
+  <button class='btn btn-outline-danger' type='submit'>Editar</button>
+</form>
+";
+
+?>
 <script>
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function() {
