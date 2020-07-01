@@ -12,9 +12,9 @@ $tabela = "Artigos";
 
 $cod='CodArtigo';
 
-$ligacao = mysqli_connect('localhost',$_SESSION['user'], $_SESSION['passwd']);
+$ligacao = mysqli_connect('localhost',$_SESSION['user'], $_SESSION['passwd'],"Empresa");
 
-$query = mysqli_query($ligacao, "SELECT * FROM Empresa.$tabela WHERE $cod = $id");
+$query = mysqli_query($ligacao, "SELECT * FROM $tabela WHERE $cod = $id");
 
 $linha = mysqli_fetch_array($query);
 

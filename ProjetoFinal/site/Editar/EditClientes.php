@@ -12,9 +12,9 @@ $tabela = "Clientes";
 
 $cod='CodCliente';
 
-$ligacao = mysqli_connect('localhost',$_SESSION['user'], $_SESSION['passwd']);
+$ligacao = mysqli_connect('localhost',$_SESSION['user'], $_SESSION['passwd'],"Empresa");
 
-$query = mysqli_query($ligacao, "SELECT * FROM Empresa.$tabela WHERE $cod = $id");
+$query = mysqli_query($ligacao, "SELECT * FROM $tabela WHERE $cod = $id");
 
 $linha = mysqli_fetch_array($query);
 
@@ -134,28 +134,28 @@ $linha = mysqli_fetch_array($query);
 
 <br>
 <div class="container-fluid">
-  <h3>Editar Artigo</h3>
+  <h3>Editar Cliente</h3>
 <?php
 
  echo "
 <form class='needs-validation justify-content-center' novalidate method='post' action='/fichas/ProjetoFinal/site/Editar/edit.php?id=".$id."&tabela=".$tabela."'>
 <div class='form-row'>
     <div class='col-md-1 mb-1'>
-      <label for='validationCustom01'>CodArtigo</label>
+      <label for='validationCustom01'>CodCliente</label>
       <input type='text' class='form-control' name='Clientes_CodCliente' value='".$linha['CodCliente']."' readonly>
     </div>
     <div class='col-md-3 mb-1'>
-      <label for='validationCustom01'>Designação</label>
+      <label for='validationCustom01'>Nome</label>
       <input type='text' class='form-control' name='Clientes_Nome' value='".$linha['Nome']."' required>
     </div>
 
 		<div class='col-md-1 mb-3'>
-			<label for='validationCustom01'>Modelo</label>
+			<label for='validationCustom01'>Morada</label>
 			<input type='text' class='form-control' name='Clientes_Morada' value='".$linha['Morada']."' required>
 		</div>
 
 		<div class='col-md-1 mb-3'>
-			<label for='validationCustom01'>Preço</label>
+			<label for='validationCustom01'>Telefone</label>
 			<input type='text' class='form-control' name='Clientes_Telefone' value='".$linha['Telefone']."' required>
 		</div>
 

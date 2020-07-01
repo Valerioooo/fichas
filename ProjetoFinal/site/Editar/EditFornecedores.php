@@ -8,13 +8,13 @@ if ($_SESSION['ligado'] != 1) {
 
 $id = $_REQUEST['id'];
 
-$tabela = "Artigos";
+$tabela = "Fornecedores";
 
-$cod='CodArtigo';
+$cod='CodForn';
 
-$ligacao = mysqli_connect('localhost',$_SESSION['user'], $_SESSION['passwd']);
+$ligacao = mysqli_connect('localhost',$_SESSION['user'], $_SESSION['passwd'],"Empresa");
 
-$query = mysqli_query($ligacao, "SELECT * FROM Empresa.$tabela WHERE $cod = $id");
+$query = mysqli_query($ligacao, "SELECT * FROM $tabela WHERE $cod = $id");
 
 $linha = mysqli_fetch_array($query);
 
@@ -135,29 +135,29 @@ $linha = mysqli_fetch_array($query);
 <br>
 
 <div class="container-fluid">
-  <h3>Editar Artigo</h3>
+  <h3>Editar Fornecedor</h3>
 <?php
 
  echo "
 <form class='needs-validation justify-content-center' novalidate method='post' action='/fichas/ProjetoFinal/site/Editar/edit.php?id=".$id."&tabela=".$tabela."'>
 <div class='form-row'>
     <div class='col-md-1 mb-1'>
-      <label for='validationCustom01'>CodArtigo</label>
-      <input type='text' class='form-control' name='Artigos_CodArtigo' value='".$linha['CodArtigo']."' readonly>
+      <label for='validationCustom01'>CodForn</label>
+      <input type='text' class='form-control' name='Fornecedores_CodForn' value='".$linha['CodForn']."' readonly>
     </div>
     <div class='col-md-3 mb-1'>
-      <label for='validationCustom01'>Designação</label>
-      <input type='text' class='form-control' name='Artigos_Designacao' value='".$linha['Designacao']."' required>
+      <label for='validationCustom01'>Nome</label>
+      <input type='text' class='form-control' name='Fornecedores_Nome' value='".$linha['Nome']."' required>
     </div>
 
 		<div class='col-md-1 mb-3'>
-			<label for='validationCustom01'>Modelo</label>
-			<input type='text' class='form-control' name='Artigos_Modelo' value='".$linha['Modelo']."' required>
+			<label for='validationCustom01'>Endereco</label>
+			<input type='text' class='form-control' name='Fornecedores_Endereco' value='".$linha['Endereco']."' required>
 		</div>
 
 		<div class='col-md-1 mb-3'>
-			<label for='validationCustom01'>Preço</label>
-			<input type='text' class='form-control' name='Artigos_Preco' value='".$linha['Preco']."' required>
+			<label for='validationCustom01'>Telefone</label>
+			<input type='text' class='form-control' name='Fornecedores_Telefone' value='".$linha['Telefone']."' required>
 		</div>
 
 </div>

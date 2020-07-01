@@ -151,7 +151,7 @@ while ($linha = mysqli_fetch_array($listagem)) {
 					<td>".$linha['data']."</td>
 					<td>".$linha['Preco']."€</td>
 					<td>".$linha['Quantidade']."</td>
-					<td><a href='/fichas/ProjetoFinal/site/Editar/Edit".$tabela.".php?id=".$linha['CodArtigo']."'\><img src='/fichas/ProjetoFinal/site/img/edit.png' width='20' height='20'></a>
+					<td><a href='/fichas/ProjetoFinal/site/Editar/Edit".$tabela.".php?id=".$linha['CodForn']."&id2=".$linha['CodArtigo']."'\><img src='/fichas/ProjetoFinal/site/img/edit.png' width='20' height='20'></a>
 					<a href='/fichas/ProjetoFinal/site/Remover/rem.php?id=".$linha['CodArtigo']."&id2=".$linha['CodForn']."&tabela=".$tabela."'\><img src='/fichas/ProjetoFinal/site/img/delete.png' width='20' height='20'></a></td></tr>";
 }
  ?>

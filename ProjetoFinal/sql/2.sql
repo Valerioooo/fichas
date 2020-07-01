@@ -17,7 +17,7 @@ create table Clientes(
   CodCliente int Auto_increment PRIMARY KEY,
   Nome varchar(30) not null,
   Morada char(20) not null,
-  Telefone float not null
+  Telefone char(9) not null
 );
 
 create table Vendas(
@@ -39,7 +39,7 @@ create table DetalhesVendas(
 create table ForneceArtigos(
 	CodForn int NOT NULL,
 	CodArtigo int NOT NULL,
-	preco decimal not null,
+	preco decimal(10,2) not null,
 	PRIMARY KEY (CodForn, CodArtigo),
 	FOREIGN KEY (CodForn) REFERENCES Fornecedores(CodForn),
 	FOREIGN KEY (CodArtigo) REFERENCES Artigos(CodArtigo)
@@ -49,7 +49,7 @@ CREATE TABLE Compras(
 	CodForn int NOT NULL,
 	CodArtigo int NOT NULL,
 	data date,
-	Preco decimal NOT NULL,
+	Preco decimal(10,2) NOT NULL,
 	Quantidade int NOT NULL,
 	PRIMARY KEY (CodForn, CodArtigo, data),
 	FOREIGN KEY (CodForn) REFERENCES Fornecedores(CodForn),

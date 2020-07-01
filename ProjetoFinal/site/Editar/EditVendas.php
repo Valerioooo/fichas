@@ -8,13 +8,13 @@ if ($_SESSION['ligado'] != 1) {
 
 $id = $_REQUEST['id'];
 
-$tabela = "Artigos";
+$tabela = "Vendas";
 
-$cod='CodArtigo';
+$cod='Nfactura';
 
-$ligacao = mysqli_connect('localhost',$_SESSION['user'], $_SESSION['passwd']);
+$ligacao = mysqli_connect('localhost',$_SESSION['user'], $_SESSION['passwd'],"Empresa");
 
-$query = mysqli_query($ligacao, "SELECT * FROM Empresa.$tabela WHERE $cod = $id");
+$query = mysqli_query($ligacao, "SELECT * FROM $tabela WHERE $cod = $id");
 
 $linha = mysqli_fetch_array($query);
 
@@ -142,29 +142,24 @@ $linha = mysqli_fetch_array($query);
 <br>
 
 <div class="container-fluid">
-  <h3>Editar Artigo</h3>
+  <h3>Editar Venda</h3>
 <?php
 
  echo "
 <form class='needs-validation justify-content-center' novalidate method='post' action='/fichas/ProjetoFinal/site/Editar/edit.php?id=".$id."&tabela=".$tabela."'>
 <div class='form-row'>
     <div class='col-md-1 mb-1'>
-      <label for='validationCustom01'>CodArtigo</label>
-      <input type='text' class='form-control' name='Artigos_CodArtigo' value='".$linha['CodArtigo']."' readonly>
+      <label for='validationCustom01'>Nfactura</label>
+      <input type='text' class='form-control' name='Vendas_Nfactura' value='".$linha['Nfactura']."' readonly>
     </div>
     <div class='col-md-3 mb-1'>
-      <label for='validationCustom01'>Designação</label>
-      <input type='text' class='form-control' name='Artigos_Designacao' value='".$linha['Designacao']."' required>
+      <label for='validationCustom01'>Data</label>
+      <input type='date' class='form-control' name='Vendas_Data' value='".$linha['Data']."' required>
     </div>
 
 		<div class='col-md-1 mb-3'>
-			<label for='validationCustom01'>Modelo</label>
-			<input type='text' class='form-control' name='Artigos_Modelo' value='".$linha['Modelo']."' required>
-		</div>
-
-		<div class='col-md-1 mb-3'>
-			<label for='validationCustom01'>Preço</label>
-			<input type='text' class='form-control' name='Artigos_Preco' value='".$linha['Preco']."' required>
+			<label for='validationCustom01'>CodCliente</label>
+			<input type='text' class='form-control' name='Vendas_CodCliente' value='".$linha['CodCliente']."' required>
 		</div>
 
 </div>

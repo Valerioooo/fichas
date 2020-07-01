@@ -1,8 +1,15 @@
 # Planos
 
+<!-- TOC -->
+
+- [Planos](#planos)
+- [1.teste](#1teste)
+
+<!-- /TOC -->
 
 __Principal__
 
+# 1. teste
 + menu com dropdown e ligações a cada tabela
 
   - Inserir
@@ -22,6 +29,6 @@ __Principal__
 
 
 + rem.php
-    - Artigos __V__
-    - Clientes __V__
-    - Compras __falta pôr as duas chaves__ (no case tenho de por header para sair e não ir executar o do fim)
+    - Artigos -> __✓__
+    - Clientes -> __✓__
+    - Compras -> __falta pôr as duas chaves__ (no case tenho de por header para sair e não ir executar o do fim)

@@ -39,3 +39,5 @@ INSERT INTO Vendas (Data, CodCliente) VALUES ('2020-03-08', 4);
 INSERT INTO DetalhesVendas VALUES (1, 5, 3);
 INSERT INTO DetalhesVendas VALUES (2, 6, 2);
 INSERT INTO DetalhesVendas VALUES (3, 7, 1);
+
+<!--SET GLOBAL FOREIGN_KEY_CHECKS=0;
