@@ -1,6 +1,11 @@
 <?php
 session_start();
 error_reporting(0);
+
+if ($_SESSION['ligado'] != 1) {
+	header("location: /fichas/ProjetoFinal/site/login.php");
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -10,12 +15,10 @@ error_reporting(0);
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/fichas/ProjetoFinal/site/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
-
 <body>
 
 <nav class="navbar navbar-expand-sm bg-dark">
@@ -31,7 +34,7 @@ error_reporting(0);
   			<div class="dropdown-menu">
     			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Listar/LisFornecedores.php">Listar Fornecedores</a>
     			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Inserir/InsFornecedores.php">Inserir Fornecedores</a>
-    			  			</div>
+  			</div>
 			</div>
 
     </li>
@@ -110,22 +113,62 @@ error_reporting(0);
 	if ($_SESSION['ligado'] == 1) {
 		echo '<a href="/fichas/ProjetoFinal/site/logout.php"> <button class="btn btn-outline-danger my-2 my-sm-0"> '.$_SESSION['user'].' LogOut</button></a>';
 	} else {
-		echo '<a href="/fichas/ProjetoFinal/site/login.php"> <button class="btn btn-outline-info my-2 my-sm-0">LogIn</button></a>';
+		echo '<a href="/fichas/ProjetoFinal/site/login.php"> <button class="btn btn-outline-info my-2 my-sm-0"> LogIn</button></a>';
 	}
 ?>
 
 </nav>
 <br>
 
-<div class="container">
-  <div class="card border-1 shadow my-2">
-    <div class="card-body p-5">
-      <h1 class="font-weight-hard">Página inicial</h1>
-      <p class="lead">Dirija-se ao menu para realizar ações nas tabelas</p>
-      <div style="height: 600px"></div>
-      <p class="lead mb-0"></p>
+<div class="container-fluid">
+  <h3>Editar Artigo</h3>
+<?php
+$tabela ='Artigos';
+
+ echo "
+<form class='needs-validation justify-content-center' novalidate method='post' action='/fichas/ProjetoFinal/site/Editar/inserir.php?tabela=".$tabela."'>
+<div class='form-row'>
+    <div class='col-md-3 mb-1'>
+      <label for='validationCustom01'>Designação</label>
+      <input type='text' class='form-control' name='Artigos_Designacao' required>
     </div>
-  </div>
+
+		<div class='col-md-1 mb-3'>
+			<label for='validationCustom01'>Modelo</label>
+			<input type='text' class='form-control' name='Artigos_Modelo' required>
+		</div>
+
+		<div class='col-md-1 mb-3'>
+			<label for='validationCustom01'>Preço</label>
+			<input type='text' class='form-control' name='Artigos_Preco' required>
+		</div>
+
+</div>
+  <button class='btn btn-info' type='submit'>Inserir</button>
+</form>
+";
+
+?>
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
 </div>
 
 </body>
