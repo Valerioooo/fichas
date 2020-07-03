@@ -7,29 +7,39 @@ switch ($tabela) {
 	$query = "INSERT INTO $tabela (Designacao, Modelo, Preco) VALUES ( '".$_POST['Artigos_Designacao']."', '".$_POST['Artigos_Modelo']."', ".$_POST['Artigos_Preco'].")";
 	echo $query;
 	break;
+
 	case 'Clientes':
 	$query = "INSERT INTO $tabela (Nome, Morada, Telefone) VALUES ( '".$_POST['Clientes_Nome']."', '".$_POST['Clientes_Morada']."', '".$_POST['Clientes_Telefone']."')";
 	echo $query;
 	break;
 
-
 	case 'Compras':
-	$query = "INSERT INTO $tabela (CodForn, CodArtigo, Data, Preco, Quantidade) VALUES ( '".$_POST['Clientes_Nome']."', '".$_POST['Clientes_Morada']."', '".$_POST['Clientes_Telefone']."')";
+	$query = "INSERT INTO $tabela (CodForn, CodArtigo, Data, Preco, Quantidade) VALUES ( ".$_POST['Compras_CodForn'].", ".$_POST['Compras_CodArtigo'].", '".$_POST['Compras_data']."', ".$_POST['Compras_Preco'].", ".$_POST['Compras_Quantidade'].")";
 	echo $query;
+	break;
 
+	case 'DetalhesVendas':
+	$query = "INSERT INTO $tabela (CodArtigo, Quantidade) VALUES ( ".$_POST['DetalhesVendas_CodArtigo'].",'".$_POST['DetalhesVendas_Quantidade']."')";
+	echo $query;
 	break;
 
 
-	case 'DetalhesVendas': $cod='NFactura';break;
+	case 'ForneceArtigos':
+	$query = "INSERT INTO $tabela (CodForn, CodArtigo, preco) VALUES ( ".$_POST['ForneceArtigos_CodForn'].", ".$_POST['ForneceArtigos_CodArtigo'].", ".$_POST['ForneceArtigos_preco'].")";
+	echo $query;
+	break;
 
 
-	case 'ForneceArtigos': $cod='CodForn';$cod2='CodArtigo';break;
+	case 'Fornecedores':
+	$query = "INSERT INTO $tabela (Nome, Endereco, Telefone) VALUES ( '".$_POST['Fornecedores_Nome']."', '".$_POST['Fornecedores_Endereco']."', '".$_POST['Fornecedores_Telefone']."')";
+	echo $query;
+	break;
 
 
-	case 'Fornecedores': $cod='CodForn';break;
-
-
-	case 'Vendas':$cod='NFactura';break;
+	case 'Vendas':
+	$query = "INSERT INTO $tabela (Data, CodCliente) VALUES ( '".$_POST['Vendas_Data']."', '".$_POST['Vendas_CodCliente']."')";
+	echo $query;
+	break;
 
 	default: echo "não funcionou";
 

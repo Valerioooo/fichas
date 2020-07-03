@@ -129,12 +129,12 @@ $tabela ='Vendas';
 <form class='needs-validation justify-content-center' novalidate method='post' action='/fichas/ProjetoFinal/site/Inserir/inserir.php?tabela=".$tabela."'>
 <div class='form-row'>
     <div class='col-md-3 mb-1'>
-      <label for='validationCustom01'>Designação</label>
-      <input type='text' class='form-control' name='Vendas_Data' required>
+      <label for='validationCustom01'>Data</label>
+      <input type='date' class='form-control' name='Vendas_Data' required>
     </div>
 
 		<div class='col-md-1 mb-3'>
-			<label for='validationCustom01'>Modelo</label>
+			<label for='validationCustom01'>CodCliente</label>
 			<input type='text' class='form-control' name='Vendas_CodCliente' required>
 		</div>
 
