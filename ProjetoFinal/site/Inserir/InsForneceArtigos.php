@@ -121,7 +121,7 @@ if ($_SESSION['ligado'] != 1) {
 <br>
 
 <div class="container-fluid">
-  <h3>Inserir Artigo</h3>
+  <h3>Editar Artigo</h3>
 <?php
 $tabela ='Artigos';
 

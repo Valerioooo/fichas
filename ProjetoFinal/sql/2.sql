@@ -16,7 +16,7 @@ create table Artigos(
 create table Clientes(
   CodCliente int Auto_increment PRIMARY KEY,
   Nome varchar(30) not null,
-  Morada char(20) not null,
+  Morada char(50) not null,
   Telefone char(9) not null
 );
 

@@ -1,6 +1,6 @@
 <?php
 session_start();
-error_reporting(0);
+//error_reporting(0);
 
 if ($_SESSION['ligado'] != 1) {
 	header("location: /fichas/ProjetoFinal/site/login.php");
@@ -121,26 +121,26 @@ if ($_SESSION['ligado'] != 1) {
 <br>
 
 <div class="container-fluid">
-  <h3>Inserir Artigo</h3>
+  <h3>Inserir Cliente</h3>
 <?php
-$tabela ='Artigos';
+$tabela ='Clientes';
 
  echo "
 <form class='needs-validation justify-content-center' novalidate method='post' action='/fichas/ProjetoFinal/site/Inserir/inserir.php?tabela=".$tabela."'>
 <div class='form-row'>
     <div class='col-md-3 mb-1'>
-      <label for='validationCustom01'>Designação</label>
-      <input type='text' class='form-control' name='Artigos_Designacao' required>
+      <label for='validationCustom01'>Nome</label>
+      <input type='text' class='form-control' name='Clientes_Nome' required>
     </div>
 
 		<div class='col-md-1 mb-3'>
-			<label for='validationCustom01'>Modelo</label>
-			<input type='text' class='form-control' name='Artigos_Modelo' required>
+			<label for='validationCustom01'>Morada</label>
+			<input type='text' class='form-control' name='Clientes_Morada' required>
 		</div>
 
 		<div class='col-md-1 mb-3'>
-			<label for='validationCustom01'>Preço</label>
-			<input type='text' class='form-control' name='Artigos_Preco' required>
+			<label for='validationCustom01'>Telefone</label>
+			<input type='text' class='form-control' name='Clientes_Telefone' required>
 		</div>
 
 </div>

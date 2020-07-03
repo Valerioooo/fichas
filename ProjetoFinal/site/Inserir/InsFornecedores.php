@@ -121,26 +121,26 @@ if ($_SESSION['ligado'] != 1) {
 <br>
 
 <div class="container-fluid">
-  <h3>Inserir Artigo</h3>
+  <h3>Editar Artigo</h3>
 <?php
-$tabela ='Artigos';
+$tabela ='Fornecedores';
 
  echo "
 <form class='needs-validation justify-content-center' novalidate method='post' action='/fichas/ProjetoFinal/site/Inserir/inserir.php?tabela=".$tabela."'>
 <div class='form-row'>
     <div class='col-md-3 mb-1'>
-      <label for='validationCustom01'>Designação</label>
-      <input type='text' class='form-control' name='Artigos_Designacao' required>
+      <label for='validationCustom01'>Nome</label>
+      <input type='text' class='form-control' name='Fornecedores_Nome' required>
     </div>
 
 		<div class='col-md-1 mb-3'>
-			<label for='validationCustom01'>Modelo</label>
-			<input type='text' class='form-control' name='Artigos_Modelo' required>
+			<label for='validationCustom01'>Endereço</label>
+			<input type='text' class='form-control' name='Fornecedores_Endereco' required>
 		</div>
 
 		<div class='col-md-1 mb-3'>
-			<label for='validationCustom01'>Preço</label>
-			<input type='text' class='form-control' name='Artigos_Preco' required>
+			<label for='validationCustom01'>Telefone</label>
+			<input type='text' class='form-control' name='Fornecedores_Telefone' required>
 		</div>
 
 </div>
