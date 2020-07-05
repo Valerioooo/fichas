@@ -41,3 +41,6 @@ INSERT INTO DetalhesVendas VALUES (2, 6, 2);
 INSERT INTO DetalhesVendas VALUES (3, 7, 1);
 
 <!--se existirem problemas com  SET GLOBAL FOREIGN_KEY_CHECKS=0;-->
+
+CREATE USER 'admin' IDENTIFIED BY '1234';
+GRANT ALL PRIVILEGES ON Empresa.* TO 'admin'@'localhost'
