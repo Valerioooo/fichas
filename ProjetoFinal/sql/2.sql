@@ -55,3 +55,10 @@ CREATE TABLE Compras(
 	FOREIGN KEY (CodForn) REFERENCES Fornecedores(CodForn),
 	FOREIGN KEY (CodArtigo) REFERENCES Artigos(CodArtigo)
 );
+
+
+create VIEW ViewVendas AS(
+select Nfactura, Nome, Data
+from Vendas, Clientes
+where Vendas.CodCliente = Clientes.CodCliente
+);
