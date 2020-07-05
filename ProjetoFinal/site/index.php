@@ -105,6 +105,19 @@ error_reporting(0);
   			</div>
 			</div>
 
+			<li class="nav-item">
+				<div class="dropdown">
+	  			<button type="button" class="btn btn-outline-success dropdown-toggle" data-toggle="dropdown">
+	    		Vistas
+	  			</button>
+	  			<div class="dropdown-menu">
+						<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Vistas/ViewVendas.php">Vista das Vendas</a>
+						<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Vistas/ViewCompras.php">Vista das Compras</a>
+						<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Vistas/ViewForneceArtigos.php">Vista de Artigos Fornecidos</a>
+
+	  			</div>
+				</div>
+
     </li>
   </ul>
 	<?php

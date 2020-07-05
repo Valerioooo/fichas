@@ -33,7 +33,7 @@ if ($_SESSION['ligado'] != 1) {
 	  			<div class="dropdown-menu">
 	    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Listar/LisFornecedores.php">Listar Fornecedores</a>
 	    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Inserir/InsFornecedores.php">Inserir Fornecedores</a>
-	    			</div>
+	    				  			</div>
 				</div>
 
 	    </li>
@@ -107,6 +107,7 @@ if ($_SESSION['ligado'] != 1) {
 				</div>
 
 	    </li>
+
 			<li class="nav-item">
 				<div class="dropdown">
 	  			<button type="button" class="btn btn-outline-success dropdown-toggle" data-toggle="dropdown">
@@ -134,22 +135,21 @@ if ($_SESSION['ligado'] != 1) {
 <br>
 
 <div class="container-fluid">
-  <h3>listar Fornecedores</h3>
+  <h3>listar Vendas</h3>
 	<table class="table">
 		<thead class="thead-dark">
 			<tr>
-				<th scope="col">Codigo de Fornecedor</th>
-				<th scope="col">Nome</th>
-				<th scope="col">Endereço</th>
-				<th scope="col">Telefone</th>
-				<th scope="col">Ação</th>
+				<th scope="col">Nº de Fornecedor</th>
+				<th scope="col">Nome do Fornecedor</th>
+				<th scope="col">Designacão do Artigo</th>
+				<th scope="col">Preço</th>
 			</tr>
 		</thead>
 			  <tbody>
 <?php
 $ligacao = mysqli_connect('localhost',$_SESSION['user'], $_SESSION['passwd']);
 
-$tabela = "Fornecedores";
+$tabela = "ViewForneceArtigos";
 
 $listagem = mysqli_query($ligacao, "SELECT * FROM Empresa.$tabela");
 
@@ -158,10 +158,8 @@ while ($linha = mysqli_fetch_array($listagem)) {
 	echo "<tr>
 					<td>".$linha['CodForn']."</td>
 					<td>".$linha['Nome']."</td>
-					<td>".$linha['Endereco']."</td>
-					<td>".$linha['Telefone']."</td>
-					<td><a href='/fichas/ProjetoFinal/site/Editar/Edit".$tabela.".php?id=".$linha['CodForn']."'\><img src='/fichas/ProjetoFinal/site/img/edit.png' width='20' height='20'></a>
-					<a href='/fichas/ProjetoFinal/site/Remover/rem.php?id=".$linha['CodForn']."&tabela=".$tabela."'\><img src='/fichas/ProjetoFinal/site/img/delete.png' width='20' height='20'></a></td></tr>";
+					<td>".$linha['Designacao']."</td>
+					<td>".$linha['preco']."€</td>";
 }
  ?>
 </tr>

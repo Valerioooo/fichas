@@ -58,7 +58,19 @@ CREATE TABLE Compras(
 
 
 create VIEW ViewVendas AS(
-select Nfactura, Nome, Data
-from Vendas, Clientes
-where Vendas.CodCliente = Clientes.CodCliente
+	select Vendas.Nfactura, Nome, Data, Designacao, Quantidade
+	from Vendas, Clientes, Artigos, DetalhesVendas
+	where Vendas.CodCliente = Clientes.CodCliente and Vendas.Nfactura = DetalhesVendas.NFactura and DetalhesVendas.CodArtigo = Artigos.CodArtigo
+);
+
+create VIEW ViewForneceArtigos AS(
+	select Fornecedores.CodForn, Fornecedores.Nome, Designacao, ForneceArtigos.preco
+	from ForneceArtigos,Fornecedores, Artigos
+	where ForneceArtigos.CodArtigo = Artigos.CodArtigo and ForneceArtigos.CodForn = Fornecedores.CodForn
+);
+
+create VIEW ViewCompras AS(
+	select Fornecedores.Nome, Designacao, Modelo, data, Compras.Preco, Quantidade
+	from Compras,Fornecedores, Artigos
+	where Compras.CodArtigo = Artigos.CodArtigo and Compras.CodForn = Fornecedores.CodForn
 );
