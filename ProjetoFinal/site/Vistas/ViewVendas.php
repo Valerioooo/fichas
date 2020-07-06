@@ -135,14 +135,14 @@ if ($_SESSION['ligado'] != 1) {
 <br>
 
 <div class="container-fluid">
-  <h3>listar Vendas</h3>
+  <h3>Listar Vendas</h3>
 	<table class="table">
 		<thead class="thead-dark">
 			<tr>
 				<th scope="col">Nº de Fatura</th>
 				<th scope="col">Nome do Cliente</th>
 				<th scope="col">Data</th>
-				<th scope="col">Designaçao</th>
+				<th scope="col">Designação do Artigo</th>
 				<th scope="col">Quantidade</th>
 			</tr>
 		</thead>

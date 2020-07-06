@@ -121,7 +121,7 @@ if ($_SESSION['ligado'] != 1) {
 	  			</div>
 				</div>
 
-    </li>	
+    </li>
 	  </ul>
 		<?php
 		if ($_SESSION['ligado'] == 1) {
@@ -135,7 +135,7 @@ if ($_SESSION['ligado'] != 1) {
 <br>
 
 <div class="container-fluid">
-  <h3>listar Vendas</h3>
+  <h3>Listar Compras</h3>
 	<table class="table">
 		<thead class="thead-dark">
 			<tr>
@@ -143,7 +143,7 @@ if ($_SESSION['ligado'] != 1) {
 				<th scope="col">Designação do Artigo</th>
 				<th scope="col">Modelo</th>
 				<th scope="col">Data</th>
-				<th scope="col">Preço</th>
+				<th scope="col">Preço Total</th>
 				<th scope="col">Quantidade</th>
 			</tr>
 		</thead>
@@ -162,7 +162,7 @@ while ($linha = mysqli_fetch_array($listagem)) {
 					<td>".$linha['Designacao']."</td>
 					<td>".$linha['Modelo']."</td>
 					<td>".$linha['data']."</td>
-					<td>".$linha['Preco']."€</td>
+					<td>".$linha['Preco']*$linha['Quantidade']."€</td>
 					<td>".$linha['Quantidade']."</td>";
 }
  ?>

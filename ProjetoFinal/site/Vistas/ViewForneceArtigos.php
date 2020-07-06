@@ -135,7 +135,7 @@ if ($_SESSION['ligado'] != 1) {
 <br>
 
 <div class="container-fluid">
-  <h3>listar Vendas</h3>
+  <h3>Listar Artigos Fornecidos</h3>
 	<table class="table">
 		<thead class="thead-dark">
 			<tr>
