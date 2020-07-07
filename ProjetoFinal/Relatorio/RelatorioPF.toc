@@ -1,0 +1,4 @@
+\babel@toc {portuguese}{}
+\contentsline {section}{\numberline {1}Introdução}{2}% 
+\contentsline {section}{\numberline {2}Caracterização do Curso}{2}% 
+\contentsline {subsection}{\numberline {2.1}Objetivos do Curso}{2}% 

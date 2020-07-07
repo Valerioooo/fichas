@@ -33,9 +33,8 @@ if ($_SESSION['ligado'] != 1) {
 	  			<div class="dropdown-menu">
 	    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Listar/LisFornecedores.php">Listar Fornecedores</a>
 	    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Inserir/InsFornecedores.php">Inserir Fornecedores</a>
-	    				  			</div>
+	    			</div>
 				</div>
-
 	    </li>
 	    <li class="nav-item">
 				<div class="dropdown">
@@ -69,7 +68,6 @@ if ($_SESSION['ligado'] != 1) {
 	    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Inserir/InsCompras.php">Inserir Compras</a>
 	  			</div>
 				</div>
-
 	    </li>
 			<li class="nav-item">
 				<div class="dropdown">
@@ -93,7 +91,6 @@ if ($_SESSION['ligado'] != 1) {
 	    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Inserir/InsVendas.php">Inserir Vendas</a>
 	  			</div>
 				</div>
-
 	    </li>
 			<li class="nav-item">
 				<div class="dropdown">
@@ -105,7 +102,6 @@ if ($_SESSION['ligado'] != 1) {
 	    			<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Inserir/InsDetalhesVendas.php">Inserir</a>
 	  			</div>
 				</div>
-
 	    </li>
 			<li class="nav-item">
 				<div class="dropdown">
@@ -116,10 +112,8 @@ if ($_SESSION['ligado'] != 1) {
 						<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Vistas/ViewVendas.php">Vista das Vendas</a>
 						<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Vistas/ViewCompras.php">Vista das Compras</a>
 						<a class="dropdown-item" href="/fichas/ProjetoFinal/site/Vistas/ViewForneceArtigos.php">Vista de Artigos Fornecidos</a>
-
 	  			</div>
 				</div>
-
     </li>
 	  </ul>
 		<?php
@@ -146,11 +140,11 @@ if ($_SESSION['ligado'] != 1) {
 		</thead>
 			  <tbody>
 <?php
-$ligacao = mysqli_connect('localhost',$_SESSION['user'], $_SESSION['passwd']);
+$ligacao = mysqli_connect('localhost',$_SESSION['user'], $_SESSION['passwd'],"Empresa");
 
 $tabela = "Vendas";
 
-$listagem = mysqli_query($ligacao, "SELECT * FROM Empresa.$tabela");
+$listagem = mysqli_query($ligacao, "SELECT * FROM $tabela order by CodForn");
 
 while ($linha = mysqli_fetch_array($listagem)) {
 

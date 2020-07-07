@@ -150,7 +150,7 @@ if ($_SESSION['ligado'] != 1) {
 $ligacao = mysqli_connect('localhost',$_SESSION['user'], $_SESSION['passwd'],"Empresa");
 $tabela = "Artigos";
 
-$listagem = mysqli_query($ligacao, "SELECT * FROM $tabela");
+$listagem = mysqli_query($ligacao, "SELECT * FROM $tabela order by CodArtigo");
 
 while ($linha = mysqli_fetch_array($listagem)) {
 

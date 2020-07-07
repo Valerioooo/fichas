@@ -148,11 +148,11 @@ if ($_SESSION['ligado'] != 1) {
 		</thead>
 			  <tbody>
 <?php
-$ligacao = mysqli_connect('localhost',$_SESSION['user'], $_SESSION['passwd']);
+$ligacao = mysqli_connect('localhost',$_SESSION['user'], $_SESSION['passwd'],"Empresa");
 
 $tabela = "Clientes";
 
-$listagem = mysqli_query($ligacao, "SELECT * FROM Empresa.$tabela");
+$listagem = mysqli_query($ligacao, "SELECT * FROM $tabela order by CodCliente");
 
 while ($linha = mysqli_fetch_array($listagem)) {
 
