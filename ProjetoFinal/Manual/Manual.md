@@ -165,6 +165,7 @@ Para inserir registos numa tabela pressione o botão correspondente à tabela qu
 
 ![inserir](img/inserir.png)
 <div style="page-break-after: always;"></div>
+
 ### Atualizar Registos
 Para atualizar um registo necessita de carregar no botão para listar a tabela em que esse registo se
 encontra e depois carregar no botão <img src="img/edit.png" width="15">
@@ -174,6 +175,7 @@ encontra e depois carregar no botão <img src="img/edit.png" width="15">
 ![botão editar](img/botaoedit.png)
 
 <div style="page-break-after: always;"></div>
+
 ### Remover Registos
 Para remover um registo necessita de carregar no botão para listar a tabela em que esse registo se
 encontra e depois carregar no botão <img src="img/delete.png" width="15">
