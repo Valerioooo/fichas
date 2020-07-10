@@ -4,15 +4,15 @@
 ## Índice
 <!-- TOC -->
 
-  - [Introdução](#introdução)
-  - [Pré-Requisitos](#pré-requisitos)
-  - [Instalação do Xampp](#instalação-do-xampp)
+  - [Introdução](#introducao)
+  - [Pré-Requisitos](#pre-requisitos)
+  - [Instalação do Xampp](#instalacao-do-xampp)
   - [Ficheiros do Site](#ficheiros-do-site)
     - [Metodo 1: Transferir .zip](#metodo-1-transferir-zip)
     - [Metodo 2: Git clone](#metodo-2-git-clone)
   - [Iniciar Xampp](#iniciar-xampp)
-  - [Criação da Base de dados](#criação-da-base-de-dados)
-  - [Utilização do Site](#utilização-do-site)
+  - [Criação da Base de dados](#criacao-da-base-de-dados)
+  - [Utilização do Site](#utilizacao-do-site)
     - [Listar Tabela](#listar-tabela)
     - [Inserir Registos](#inserir-registos)
     - [Atualizar Registos](#atualizar-registos)
@@ -21,11 +21,11 @@
 <!-- /TOC -->
 
 
-## Introdução
+## Introdução <a name="introducao"></a>
 
 Este manual vai explicar como visualizar o site e como trabalhar com o mesmo.
 
-## Pré-Requisitos
+## Pré-Requisitos <a name="pre-requisitos"></a>
 Para conseguir visualizar o site é necessário:
 
 * Browser web (Chrome/Firefox/Edge)
@@ -33,7 +33,7 @@ Para conseguir visualizar o site é necessário:
 * Ficheiros do Site
 * git (caso escolha o metodo de instalação por git clone)
 
-## Instalação do Xampp
+## Instalação do Xampp <a name="instalacao-do-xampp"></a>
 A Instalação do Xampp é efetuada fazendo a transferencia do
 [ficheiro de instalação](https://www.apachefriends.org/download.html)
 indicado para o seu sistema operativo e seguir as instruções de instalação de acordo com o seu
@@ -54,11 +54,11 @@ repositório do github e existem duas maneiras de os obter.
 <div style="page-break-after: always;"></div>
 
 
-### Metodo 1: Transferir .zip
+### Método 1: Transferir .zip <a name="metodo-1-transferir-zip"></a>
 
 Transfira o ficheiro .zip carregando no botão __Code__ e em seguida no botão __Download Zip__
 
-![Exemplo de tranferencia de ficheiro .zip](download.png)
+![Exemplo de tranferencia de ficheiro .zip](img/download.png)
 
 Extraia os ficheiro .zip para:
 
@@ -70,7 +70,7 @@ __Linux__ - ```/opt/lampp/htdocs/```
 
 Em seguida Renomeie a pasta de "fichas-master" para "fichas"
 
-### Metodo 2: Git clone
+### Método 2: Git clone <a name="metodo-2-git-clone"></a>
 
 Abra o terminal/linha de comandos como **root**/**administrador** e escreva:
 
@@ -114,7 +114,7 @@ sudo /opt/lampp/lampp start
 
 ```
 
-## Criação da Base de dados
+## Criação da Base de dados <a name="criacao-da-base-de-dados"></a>
 
 Se não possuir uma Base de Dados já criada tem de criar uma utilizando uma ferramenta de manipulação
 de Base de Dados. Neste exemplo iremos utilizar o _phpMyAdmin_, pois este vem pré instalado com o
@@ -123,26 +123,28 @@ Xampp:
 1. Abra o Browser web.
 
 2. Escreva no url "[_localhost_](http://localhost)".
-3. Carregue no botão _phpMyAdmin_. ![botão phpMyAdmin](phpmyadmin.png)
+3. Carregue no botão _phpMyAdmin_. ![botão phpMyAdmin](img/phpmyadmin.png)
 4. Abra a pasta "sql" dentro da pasta ProjetoFinal
 5. Copie e cole o conteúdo dos ficheiros 1.sql, 2.sql e 4.sql pela mesma ordem para a aba "__SQL__"
 no _phpMyAdmin_ carregando no botão "__Go__" por cada ficheiro copiado.
-![botão Go](go.png)
+![botão Go](img/go.png)
 6. A base de dados está criada!
 
-## Utilização do Site
+## Utilização do Site <a name="utilizacao-do-site"></a>
 O site tem uma interface que permite escolher a tabela que pretende listar/inserir registos, e as
 vistas de algumas tabelas através do menu de navegação.
 Também pode efetuar a remoção e atualização de registos dentro da listagem.
+
+Para aceder ao site pode utilizar este [link](http://localhost/fichas/ProjetoFinal/site)
 
 Para efetuar alguma alteração ou listagem nas tabelas é necessário o login no site. Este é efetuado
 com as credenciais de utilizadores presentes na base de dados. Neste caso como criámos o utilizador
 "__admin__" com a password "__1234__" no [ponto anterior](#criação-da-base-de-dados) quando inserimos
 os valores para a criação da mesma vamos utilizar estas credenciais.
 
-![botão Login](botaologin.png)
+![botão Login](img/botaologin.png)
 
-![botão phpMyAdmin](login.png)
+![botão phpMyAdmin](img/login.png)
 
 Depois de ser efetuado o login o site permite que sejam efetuadas "_queries_" à base de dados.
 
@@ -152,13 +154,30 @@ Depois de ser efetuado o login o site permite que sejam efetuadas "_queries_" à
 Para listar uma tabela pressione o botão correspondente à tabela que pretente listar e em seguida carrege no botão
 "listar"
 
-![botão listar](botaolistar.png)
+![botão listar](img/botaolistar.png)
+
+<div style="page-break-after: always;"></div>
 
 ### Inserir Registos
 Para inserir registos numa tabela pressione o botão correspondente à tabela que pretente insterir registos e em seguida carrege no botão "inserir"
 
-![botão inserir](inserir.png)
+![botão inserir](img/botaoinserir.png)
 
+![inserir](img/inserir.png)
+<div style="page-break-after: always;"></div>
 ### Atualizar Registos
-Para atualizar um registo necessita de carregar no botão para listar a tabela em que esse registo se encontra e depois carregar no botão
+Para atualizar um registo necessita de carregar no botão para listar a tabela em que esse registo se
+encontra e depois carregar no botão <img src="img/edit.png" width="15">
+
+![botão listar](img/botaolistar.png)
+
+![botão editar](img/botaoedit.png)
+
+<div style="page-break-after: always;"></div>
 ### Remover Registos
+Para remover um registo necessita de carregar no botão para listar a tabela em que esse registo se
+encontra e depois carregar no botão <img src="img/delete.png" width="15">
+
+![botão listar](img/botaolistar.png)
+
+![botão remover](img/botaodelete.png)
