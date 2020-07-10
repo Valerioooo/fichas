@@ -144,7 +144,7 @@ $ligacao = mysqli_connect('localhost',$_SESSION['user'], $_SESSION['passwd'],"Em
 
 $tabela = "Vendas";
 
-$listagem = mysqli_query($ligacao, "SELECT * FROM $tabela order by CodForn");
+$listagem = mysqli_query($ligacao, "SELECT * FROM $tabela order by Nfactura");
 
 while ($linha = mysqli_fetch_array($listagem)) {
 

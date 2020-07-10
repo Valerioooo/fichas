@@ -145,7 +145,8 @@ Depois de ser efetuado o login o site permite que sejam efetuadas "_queries_" à
 
 ### Listar Tabela
 
-Para listar uma tabela pressione o botão correspondente à tabela que pretente listar e em seguida carrege no botão "listar"
+Para listar uma tabela pressione o botão correspondente à tabela que pretente listar e em seguida carrege no botão
+"listar"
 
 ![botão listar](botaolistar.png)
 

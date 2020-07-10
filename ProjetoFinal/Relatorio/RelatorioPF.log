@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.7.7)  10 JUL 2020 12:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.7.7)  10 JUL 2020 12:59
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -455,17 +455,17 @@ LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/n' in size <14.4> not availa
 ble
 (Font)              Font shape `T1/ClearSans-TLF/regular/n' tried instead on in
-put line 76.
+put line 78.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
-(Font)              scaled to size 14.4pt on input line 76.
+(Font)              scaled to size 14.4pt on input line 78.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/n' in size <17.28> not avail
 able
 (Font)              Font shape `T1/ClearSans-TLF/regular/n' tried instead on in
-put line 76.
+put line 78.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
-(Font)              scaled to size 17.28pt on input line 76.
+(Font)              scaled to size 17.28pt on input line 78.
 LaTeX Font Info:    Trying to load font information for TS1+ClearSans-TLF on in
-put line 76.
+put line 78.
 (/usr/share/texmf-dist/tex/latex/clearsans/TS1ClearSans-TLF.fd
 File: TS1ClearSans-TLF.fd 2019/10/16 (autoinst) Font definitions for TS1/ClearS
 ans-TLF.
@@ -473,18 +473,18 @@ ans-TLF.
 LaTeX Font Info:    Font shape `TS1/ClearSans-TLF/m/n' in size <14.4> not avail
 able
 (Font)              Font shape `TS1/ClearSans-TLF/regular/n' tried instead on i
-nput line 76.
+nput line 78.
 LaTeX Font Info:    Font shape `TS1/ClearSans-TLF/regular/n' will be
-(Font)              scaled to size 14.4pt on input line 76.
+(Font)              scaled to size 14.4pt on input line 78.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/b/n' in size <17.28> not avail
 able
 (Font)              Font shape `T1/ClearSans-TLF/bold/n' tried instead on input
- line 80.
+ line 82.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/bold/n' will be
-(Font)              scaled to size 17.28pt on input line 80.
+(Font)              scaled to size 17.28pt on input line 82.
 (./RelatorioPF.toc
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/b/n' in size <12> not availabl
 e
@@ -506,26 +506,26 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/it' in size <12> not availab
 le
 (Font)              Font shape `T1/ClearSans-TLF/regular/it' tried instead on i
-nput line 86.
+nput line 88.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/it' will be
-(Font)              scaled to size 12.0pt on input line 86.
+(Font)              scaled to size 12.0pt on input line 88.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/b/n' in size <14.4> not availa
 ble
 (Font)              Font shape `T1/ClearSans-TLF/bold/n' tried instead on input
- line 90.
+ line 92.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/bold/n' will be
-(Font)              scaled to size 14.4pt on input line 90.
+(Font)              scaled to size 14.4pt on input line 92.
 <cal.png, id=12, 627.34375pt x 607.26875pt>
 File: cal.png Graphic file (type png)
 <use cal.png>
-Package pdftex.def Info: cal.png  used on input line 95.
+Package pdftex.def Info: cal.png  used on input line 97.
 (pdftex.def)             Requested size: 217.66211pt x 210.69402pt.
 LaTeX Font Info:    Font shape `TS1/ClearSans-TLF/m/n' in size <12> not availab
 le
 (Font)              Font shape `TS1/ClearSans-TLF/regular/n' tried instead on i
-nput line 102.
+nput line 104.
 LaTeX Font Info:    Font shape `TS1/ClearSans-TLF/regular/n' will be
-(Font)              scaled to size 12.0pt on input line 102.
+(Font)              scaled to size 12.0pt on input line 104.
 [2 <./cal.png>] [3] (./RelatorioPF.aux) ) 
 Here is how much of TeX's memory you used:
  5875 strings out of 492167

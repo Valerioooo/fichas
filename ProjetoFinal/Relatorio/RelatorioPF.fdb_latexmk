@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1594379963 "RelatorioPF.tex" "RelatorioPF.pdf" "RelatorioPF" 1594379964
+["pdflatex"] 1594382350 "RelatorioPF.tex" "RelatorioPF.pdf" "RelatorioPF" 1594382351
   "/usr/share/texmf-dist/fonts/enc/dvips/clearsans/clr_nrghxx.enc" 1572568373 3317 49c09c087ace8f807c62d66ec2c69191 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/clearsans/clr_zxbkm4.enc" 1572568373 3006 bee092328c2beafee1f162d4e38aad34 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1572595918 3332 103109f5612ad95229751940c61aada0 ""
@@ -82,12 +82,12 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1572595918 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1594130260 4572998 f9631eebba48c3ee98e5d310044b0a09 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1594130239 8044938 3f30e2cf33e26e56f1b26179e3d2badf ""
-  "RelatorioPF.aux" 1594379964 537 37bf50a9f464e9ee1bb5c8c7fd68d6f3 "pdflatex"
-  "RelatorioPF.tex" 1594379961 3353 cf8ecca09efc0deccfe4dbf55823703f ""
-  "RelatorioPF.toc" 1594379964 224 ff6929444fe1bf6dc0d9386e88654098 "pdflatex"
+  "RelatorioPF.aux" 1594382351 537 37bf50a9f464e9ee1bb5c8c7fd68d6f3 "pdflatex"
+  "RelatorioPF.tex" 1594382347 3360 5bade7175d0656d018b74b0f1f651a7a ""
+  "RelatorioPF.toc" 1594382351 224 ff6929444fe1bf6dc0d9386e88654098 "pdflatex"
   "cal.png" 1594129114 59782 d2aa665e3183d435a9b389bf0fb05641 ""
   (generated)
-  "RelatorioPF.log"
   "RelatorioPF.pdf"
+  "RelatorioPF.log"
   "RelatorioPF.toc"
   "RelatorioPF.aux"
