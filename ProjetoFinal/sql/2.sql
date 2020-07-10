@@ -1,3 +1,5 @@
+Use Empresa;
+Use empresa;
 
 create table Empresa.Fornecedores(
   CodForn int Auto_increment PRIMARY KEY,

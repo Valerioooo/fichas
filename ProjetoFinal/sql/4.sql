@@ -42,5 +42,4 @@ INSERT INTO Empresa.DetalhesVendas VALUES (1, 5, 3);
 INSERT INTO Empresa.DetalhesVendas VALUES (2, 6, 2);
 INSERT INTO Empresa.DetalhesVendas VALUES (3, 7, 1);
 
-CREATE USER 'admin' IDENTIFIED BY '1234';
-GRANT ALL PRIVILEGES ON Empresa.* TO 'admin'@'localhost'
+grant all privileges on Empresa.* to admin@'localhost' identified by '1234'
