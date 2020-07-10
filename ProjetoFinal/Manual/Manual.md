@@ -8,11 +8,15 @@
   - [Pré-Requisitos](#pré-requisitos)
   - [Instalação do Xampp](#instalação-do-xampp)
   - [Ficheiros do Site](#ficheiros-do-site)
-    - [Transferir .zip](#transferir-zip)
-    - [Git clone](#git-clone)
+    - [Metodo 1: Transferir .zip](#metodo-1-transferir-zip)
+    - [Metodo 2: Git clone](#metodo-2-git-clone)
   - [Iniciar Xampp](#iniciar-xampp)
   - [Criação da Base de dados](#criação-da-base-de-dados)
   - [Utilização do Site](#utilização-do-site)
+    - [Listar Tabela](#listar-tabela)
+    - [Inserir Registos](#inserir-registos)
+    - [Atualizar Registos](#atualizar-registos)
+    - [Remover Registos](#remover-registos)
 
 <!-- /TOC -->
 
@@ -50,7 +54,7 @@ repositório do github e existem duas maneiras de os obter.
 <div style="page-break-after: always;"></div>
 
 
-### Transferir .zip
+### Metodo 1: Transferir .zip
 
 Transfira o ficheiro .zip carregando no botão __Code__ e em seguida no botão __Download Zip__
 
@@ -66,7 +70,7 @@ __Linux__ - ```/opt/lampp/htdocs/```
 
 Em seguida Renomeie a pasta de "fichas-master" para "fichas"
 
-### Git clone
+### Metodo 2: Git clone
 
 Abra o terminal/linha de comandos como **root**/**administrador** e escreva:
 
@@ -121,7 +125,7 @@ Xampp:
 2. Escreva no url "[_localhost_](http://localhost)".
 3. Carregue no botão _phpMyAdmin_. ![botão phpMyAdmin](phpmyadmin.png)
 4. Abra a pasta "sql" dentro da pasta ProjetoFinal
-5. Copie e cole o conteúdo dos ficheiros 1.sql, 2.sql e 3.sql pela mesma ordem para a aba "__SQL__"
+5. Copie e cole o conteúdo dos ficheiros 1.sql, 2.sql e 4.sql pela mesma ordem para a aba "__SQL__"
 no _phpMyAdmin_ carregando no botão "__Go__" por cada ficheiro copiado.
 ![botão Go](go.png)
 6. A base de dados está criada!
@@ -153,8 +157,8 @@ Para listar uma tabela pressione o botão correspondente à tabela que pretente 
 ### Inserir Registos
 Para inserir registos numa tabela pressione o botão correspondente à tabela que pretente insterir registos e em seguida carrege no botão "inserir"
 
-![botão inserir](botaoinserir.png)
+![botão inserir](inserir.png)
 
 ### Atualizar Registos
-
+Para atualizar um registo necessita de carregar no botão para listar a tabela em que esse registo se encontra e depois carregar no botão
 ### Remover Registos
