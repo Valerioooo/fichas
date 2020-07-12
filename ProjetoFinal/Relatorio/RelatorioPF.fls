@@ -144,9 +144,6 @@ INPUT /usr/share/texmf-dist/fonts/vf/intel/clearsans/ClearSans-tlf-t1.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/intel/clearsans/ClearSans-tlf-t1--base.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/intel/clearsans/ClearSans-Italic-tlf-t1.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/intel/clearsans/ClearSans-Bold-tlf-t1.tfm
-INPUT cal.png
-INPUT ./cal.png
-INPUT ./cal.png
 INPUT /usr/share/texmf-dist/fonts/tfm/intel/clearsans/ClearSans-tlf-ts1.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/intel/clearsans/ClearSans-Italic-tlf-t1.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/intel/clearsans/ClearSans-Italic-tlf-t1--base.tfm
@@ -154,6 +151,9 @@ INPUT /usr/share/texmf-dist/fonts/vf/intel/clearsans/ClearSans-Bold-tlf-t1.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/intel/clearsans/ClearSans-Bold-tlf-t1--base.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/intel/clearsans/ClearSans-tlf-ts1.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/intel/clearsans/ClearSans-tlf-ts1--base.tfm
+INPUT cal.png
+INPUT ./cal.png
+INPUT ./cal.png
 INPUT RelatorioPF.aux
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/clearsans/clr_zxbkm4.enc
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/clearsans/clr_nrghxx.enc

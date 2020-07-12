@@ -2,3 +2,11 @@
 \contentsline {section}{\numberline {1}Introdução}{2}% 
 \contentsline {section}{\numberline {2}Caracterização do Curso}{2}% 
 \contentsline {subsection}{\numberline {2.1}Objetivos do Curso}{2}% 
+\contentsline {section}{\numberline {3}Recursos Materiais}{2}% 
+\contentsline {subsection}{\numberline {3.1}Hardware}{2}% 
+\contentsline {subsection}{\numberline {3.2}Software}{2}% 
+\contentsline {subsubsection}{\numberline {3.2.1}Curso}{2}% 
+\contentsline {subsubsection}{\numberline {3.2.2}Manual de Utilizador}{2}% 
+\contentsline {subsubsection}{\numberline {3.2.3}Relatório}{3}% 
+\contentsline {section}{\numberline {4}Descrição das Atividades Realizadas}{3}% 
+\contentsline {section}{\numberline {5}Reflexão Final}{4}% 
