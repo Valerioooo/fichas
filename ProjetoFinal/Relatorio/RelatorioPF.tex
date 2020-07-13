@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass[14pt]{article}
 
 \usepackage[a4paper, left=2cm, right=2cm]{geometry} % A4 paper size and thin margins
 
@@ -15,11 +15,18 @@
 \usepackage{listings}
 \usepackage{xcolor}
 \usepackage{float}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,
+    urlcolor=black,
+}
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
-\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.91}
 
 \lstdefinestyle{mystyle}{
     backgroundcolor=\color{backcolour},
@@ -70,6 +77,7 @@
 		\large
 		{\Large
    	Escola Secundária António Damásio\\[4pt]
+    \large Curso 2: Técnicas básicas de escrita de páginas dinâmicas em PHP\\[2pt]
     \large Tecnico de Gestão e Programação de Redes Informáticas: 2º Ano\\[2pt]
     \Large Diogo Valério}\\[4pt]
     Julho de 2020\\[1pt]
@@ -82,14 +90,29 @@
 \newpage
 
 \section{Introdução}
-Este relatório foi realizado no âmbito do curso de prática simulada facultado pela \textbf{ANPRI} (Associação Nacional Professores de Informática), a que fomos submetidos no lugar da Formação em Contexto de Trabalho devido à pandemia de Covid-19 a que estamos a passar de momento.
+Este relatório foi realizado no âmbito do curso de prática simulada facultado pela \textbf{ANPRI} (Associação Nacional Professores de Informática), a que fomos submetidos no lugar da
+Formação em Contexto de Trabalho devido à pandemia de Covid-19 a que estamos a passar de momento.
 
-O curso frequentado foi o \textbf{Curso 2: Técnicas básicas de escrita de páginas dinâmicas em PHP} e decorreu de 19 de maio a 8 de julho, mas, devido a problemas técnicos na plataforma e também a ataques de  \textit{Denial of Service}(também conhecido como \textit{DDOS}) à plataforma, o decorrer normal do curso foi prejudicado, sendo que este acabou por ser movido para o serviço \textit{Google Sites}.
+O curso frequentado foi o \textbf{Curso 2: Técnicas básicas de escrita de páginas dinâmicas em PHP} e decorreu de 19 de maio a
+8 de julho, mas, devido a problemas técnicos na plataforma e também a ataques de \textit{Denial of Service}(também conhecido como \textit{DDOS})
+à plataforma, o decorrer normal do curso foi prejudicado, sendo que este acabou por ser movido para a plataorma \textit{Google Sites}.
 
 
 \section{Caracterização do Curso}
 \subsection{Objetivos do Curso}
-O curso teve como objetivo ensinar os alunos a desenvolver páginas web dinâmicas
+O curso teve como objetivo ensinar os alunos a
+desenvolver páginas web dinâmicas com recurso à linguagem de programação PHP.
+O curso também desenvolveu uma vertente de HTML para o desenvolvimento de páginas web e também de SQL para a criação de bases de dados.
+
+\subsection{Area de Atividade}
+O curso foi hospedado primeiramente no \textit{moodle} da \textbf{ANPRI} e seguidamente na plataforma \textit{Google Sites}.
+
+link para o curso no \textit{moodle} : \url{https://anpri.edu.pt/course/view.php?id=58}
+
+link para o curso no \textit{Google Sites} : \url{https://sites.google.com/anpri.pt/cursodepraticasimuladaphp/}
+
+\subsection{Contactos}
+O curso foi dirigido pelo formador \textbf{Prof. Carlos Almeida} (prof.carlos.almeida@gmail.com) e foi o desenvolvido com a ajuda da \textbf{Prof. Ester Tavares} (ester.tro@gmail.com)
 
 \section{Recursos Materiais}
 Durante o decorrer do curso foram utilizados os seguintes materiais:
@@ -103,49 +126,386 @@ Durante o decorrer do curso foram utilizados os seguintes materiais:
 
 \subsubsection{Curso}
 \begin{list}{•}
-\item Editor: Atom;
+\item Editor: \textit{Atom};
 \item
-\item Pasta Partilhada: github.
+\item Servidor: \textit{Xampp};
+\item SQL: \textit{phpMyAdmin}
+\item Pasta Partilhada: \textit{GitHub}.
 \end{list}
 
 \subsubsection{Manual de Utilizador}
 \begin{list}{•}
-  \item Editor: Atom;
+  \item Editor: \textit{Atom};
   \item
-  \item Linguagem: Markdown.
+  \item Linguagem: \textit{Markdown}.
 \end{list}
 
 
 \subsubsection{Relatório}
 \begin{list}{•}
-\item Editor: Atom;
+\item Editor: \textit{Atom};
 \item
-\item Linguagem: LaTeX.
+\item Linguagem: \textit{LaTeX}.
 
 \end{list}
 
 \section{Descrição das Atividades Realizadas}
-No inicio os objetivos do curso foram bem delimitados como mostra a figura seguinte:
+\subsection{1ª Semana}
+Durante a primeira semana foram desenvolvidos programas simples pois estes destinavam-se a ajudar-nos a perceber como é que a linguagem PHP funciona.
+Entre estes estão:
+\subsubsection{Programa que devolve uma mensagem}
+Este programa teve como objetivo ensinar-nos a usar a função "\textbf{echo}".
+\begin{lstlisting}[language=PHP]
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title></title>
+    </head>
+    <body>
+      <?php echo "O primeiro programa nunca se esquece!"; ?>
 
-\begin{figure}[h]
-        \centering
-        \includegraphics[width=0.45\linewidth]{cal.png}
-        \caption{Menu de Interação}
-        \label{fig:menu1}
-\end{figure}
+    </body>
+  </html>
 
-No entanto estes não foram cumpridos em qualquer aspecto:
+\end{lstlisting}
+
+\subsubsection{Programa que Devolve o Resultado de uma Operação Matemática}
+
+Este programa teve como objetivo ensinar-nos a utilizar as Operações Matemáticas, neste caso, a Adição.
+
+\begin{lstlisting}[language=PHP]
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title></title>
+    </head>
+    <body>
+      <?php
+  $a = 23;
+  $b = 45;
+  echo $a+$b;
+  ?>
+
+    </body>
+  </html>
 
 
-\begin{list}{•}
-\item Não existiu nenhuma forma de marcar presença no dia 19 (mostrava apenas uma marcação de presença para dia 20), e no dia seguinte foi introduzida a marcação de presença para o dia 19;
-\item
-\item Não houve qualquer interação no primeiro dia de curso por parte do formador (Prof. Carlos Almeida);
-\item Não existiu qualquer manual na plataforma;
-\item Não houveram atividades propostas.
+\end{lstlisting}
 
-\end{list}
+\subsubsection{Programa que Devolve a Tabuada de um Número}
+
+Este programa teve como objetivo ensinar-nos a utilizar as estruturas de repetição, neste caso, o ciclo "\textbf{\textit{for}}".
+
+\begin{lstlisting}[language=PHP]
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title></title>
+    </head>
+    <body>
+  <?php
+  $a = 4;
+  for ($i=0; $i <= 12; $i++) {
+    echo $a, "x",$i , "=" ,$a*$i, '<br \>';
+  }
+  ?>
+
+    </body>
+  </html>
+
+
+\end{lstlisting}
+
+\subsubsection{Programa que Devolve o Valor Presente num Espaço de um Array}
+
+Este programa teve como objetivo ensinar-nos a utilizar arrays.
+
+\begin{lstlisting}[language=PHP]
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title></title>
+    </head>
+    <body>
+  <?php
+
+  $cores = array('Vermelho', 'Verde', 'Azul', 'Violeta');
+  echo $cores[1];
+
+  ?>
+
+    </body>
+  </html>
+
+\end{lstlisting}
+
+\subsubsection{Programa que Cria um formulário}
+
+Este programa teve como objetivo ensinar-nos a utilizar formulários em conjunto com os métodos \textbf{POST} e \textbf{GET}.
+
+\begin{lstlisting}[language=PHP]
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <link rel="stylesheet" href="style.css">
+      <meta charset="utf-8">
+      <title></title>
+    </head>
+    <body>
+      <?php ?>
+      <fieldset>
+        <form action="tratamento.php" method="post">
+          <table>
+          <tr>
+        <label for="nome">Nome: </label> <input type = "text" name="nome"><br>
+        <label for="email">Email: </label> <input type = "email" name = "email"><br>
+        <label for="telefone">Telefone/Telemóvel: </label> <input type = "text" name = "telefone"><br>
+        <br>
+        <br>
+            <td align = "left">
+              Cursos de informatica:
+            </td align = "left">
+            <td>
+               <input name = "cursos" type="radio"  value="Android" > Android
+               <br>
+               <input name = "cursos"type="radio" value="Html" > Html
+               <br>
+               <input name = "cursos" type="radio"  value="Java"> Java
+               <br>
+               <input name = "cursos" type="radio"  value="PHP" > PHP
+               <br>
+               <input name = "cursos" type="radio" value="Python"> Python
+               <br>
+               <input name = "cursos" type="radio" value="SQL" > SQL
+               <br>
+               <input name = "cursos" type="radio" value="Scratch" > Scratch
+               <br>
+               <br>
+             </td>
+             <tr>
+                <td>
+                  <label for="nivel">Selecione uma opção:</label>
+                </td>
+                <td align="left">
+                    <select name="nivel">
+                      <option value="init">Iniciação</option>
+                      <option value="med">Intermédio</option>
+                      <option value="adv">Avançado</option>
+                    </select>
+                </td>
+             </tr>
+
+             <tr>
+                <td>
+                  <br>
+                  <br>
+                  <br>
+                  <label for="obs">Observações:</label>
+                  <textarea name="obs"></textarea>
+                </td>
+            </tr>
+
+          </tr>
+        </table>
+        <input type="submit" name="submit" value="Enviar">
+        </form>
+      </fieldset>
+    </body>
+  </html>
+\end{lstlisting}
+
+\subsubsection{Programa que Define COOKIES e em Seguida Devolve-as}
+
+Este programa teve como objetivo ensinar-nos a utilizar \textbf{COOKIES}.
+
+\begin{lstlisting}[language=PHP]
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title></title>
+    </head>
+    <body>
+      <?php
+
+      $cookies['nome'] = 'joao';
+      $cookies['Apelido'] = 'Alberto';
+      $cookies['idade'] = '20';
+      $cookies['morada'] = 'rua das 12 casas nr 13';
+
+      foreach($cookies as $key => $value) {
+        setcookie($key,$value, time()+3600);
+      }
+      echo "<hr /><pre>";print_r($_COOKIE);echo '<pre>';
+      ?>
+    </body>
+  </html>
+
+\end{lstlisting}
+
+\subsubsection{Programa que Define Variávies de Sessão por Meio de um Formulário e em Seguida Devolve-as}
+
+Este programa teve como objetivo ensinar-nos a utilizar \textbf{Sessões}.
+
+\begin{lstlisting}[language=PHP]
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+   <head>
+     <meta charset="utf-8">
+     <title></title>
+   </head>
+   <body>
+     <form name = "form" action="" method="post">
+       Nome:
+       <input type = "text" name = "name">
+       <input type = "submit" value= "Iniciar Sessão" name="sendform">
+     </form>
+     <?php
+       if(isset($_SESSION['sendform'])){
+         $ses['id'] = session_id();
+         $ses['on'] = time();
+         $ses['off'] = time() + 30;
+         $ses['ip'] = $_SERVER['REMOTE_ADDR'];
+         $ses['nome'] = $_POST['nome'];
+
+         $_SESSION['user'] = $ses;
+
+         header('Location'.$_SERVER['PHP_SELF']);
+       }
+
+       if(empty($_SESSION['user'])){
+         echo '<form name = "form" action="" method="post">
+               Nome:
+               <input type = "text" name = "name">
+               <input type = "submit" value= "Iniciar Sessão" name="sendform">
+               </form>';
+       }
+       else{
+         $tempoLog = $_SESSION['user']['on'];
+         $tempoAgora = time();
+         $tempoOnLine = $tempoAgora - $tempoLog;
+         $tempoFim = $_SESSION['user']['off'] - $tempoAgora;
+         echo 'ola'.$_SESSION['user']['nome'].' Esta logado a '.$tempoLog.'segundos';
+         echo 'O seu IP é'.$_SESSION['user']['ip'];
+       }
+     ?>
+   </body>
+  </html>
+\end{lstlisting}
+
+\subsection{2ª Semana}
+
+Durante a segunda semana houve a abordagem da linguagem SQL de maneira a ensinar os alunos a criar e manipular bases de dados relacionais.
+Alguns exemplos da sua utilização são:
+
+\subsubsection{Criação de Tabelas Relacionadas }
+
+\begin{lstlisting}[language=SQL]
+  create table Colaborador(
+    nomeColaborador char(30) PRIMARY KEY,
+    morada char(30) not null,
+    cidade char(15) not null,
+    estadoCivil char(15) not null );
+
+  create table Empresa(
+    nomeEmpresa char(30) PRIMARY KEY,
+    cidade char(15) not null );
+
+    create table Trabalha(
+    	nomeColaborador char(30),
+    	nomeEmpresa char(30),
+    	salario float not null ,
+    	FOREIGN key(nomeColaborador) REFERENCES Colaborador(nomeColaborador),
+      FOREIGN key(nomeEmpresa) REFERENCES Empresa(nomeEmpresa),
+      PRIMARY KEY(nomeColaborador,nomeEmpresa)
+    );
+
+    create table Diretor(
+      	nomeColaborador char(30),
+      	nomeEmpresa char(30),
+      	FOREIGN key(nomeColaborador) REFERENCES Colaborador(nomeColaborador),
+        FOREIGN key(nomeEmpresa) REFERENCES Empresa(nomeEmpresa),
+        PRIMARY KEY(nomeColaborador,nomeEmpresa)
+    );
+
+\end{lstlisting}
+
+\subsubsection{Criação de Utilizadores e Definição dos seus Privilégios}
+
+\begin{lstlisting}[language=SQL]
+  CREATE USER CAntunes IDENTIFIED BY 'CAntunes?218';
+  CREATE USER ASilva IDENTIFIED BY 'ASilvs!109';
+  GRANT All PRIVILEGES  ON Colaborador.* TO CAntunes;
+  GRANT SELECT ON Colaborador.* TO ASilva;
+\end{lstlisting}
+\newpage
+\subsubsection{Criação de Uma Base de Dados Relacional }
+
+\begin{lstlisting}[language=SQL]
+create database Pais;
+
+
+create table Distrito(
+  CodDistrito int Auto_increment PRIMARY KEY,
+  nomeDistrito varchar(30),
+  AreaTotal float not null,
+  População int not null
+);
+
+create table Provincia(
+  CodProvincia int Auto_increment PRIMARY KEY,
+  nomeProvincia varchar(30) not null,
+  DescricaoPorvincia varchar(250)not null
+);
+
+create table Concelho(
+  CodConcelho int Auto_increment PRIMARY KEY,
+  CodDistrito int not null,
+  nomeConcelho varchar(30) not null,
+  CodProvincia int not null,
+  FOREIGN key(CodDistrito) REFERENCES Distrito(CodDistrito),
+  FOREIGN key(CodProvincia) REFERENCES Provincia(CodProvincia)
+);
+
+insert into Distrito(nomeDistrito, AreaTotal, Populacao) values('Lisboa', 2761, 3079772);
+insert into Distrito(nomeDistrito, AreaTotal, Populacao) values('Leiria', 3506, 470895);
+insert into Distrito(nomeDistrito, AreaTotal, Populacao) values('Aveiro', 2798.54, 714200);
+insert into Distrito(nomeDistrito, AreaTotal, Populacao) values('Castelo Branco', 6675, 196264);
+insert into Distrito(nomeDistrito, AreaTotal, Populacao) values('Coimbra', 3947, 429987);
+
+insert into Provincia(nomeProvincia, DescricaoPorvincia)
+values('Estremadura', 'A Estremadura é uma província histórica (ou região natural) de Portugal, estabelecida na Idade Média e extinta no século XIX, devendo o seu nome derivar do latim Extrema Durii');
+insert into Provincia(nomeProvincia, DescricaoPorvincia)
+values('Beira Litoral', 'A Beira Litoral é uma província histórica (ou região natural) situada na região do Centro de Portugal, formalmente instituída por uma reforma administrativa havida em 1936.');
+insert into Provincia(nomeProvincia, DescricaoPorvincia)
+values('Beira Baixa', 'A Beira Baixa é uma província histórica (ou região natural) situada na região do Centro de Portugal, originalmente criada no século XIX a partir de parte do território da anterior Província da Beira.');
+insert into Provincia(nomeProvincia, DescricaoPorvincia)
+values('Beira Alta', 'A Beira Alta é uma província histórica (ou região natural) situada na região do Centro de Portugal. Foi criada, em 1832, por subdivisão da antiga província da Beira, passando a ser constituída pelas comarcas de Viseu, Lamego e Trancoso.');
+insert into Provincia(nomeProvincia, DescricaoPorvincia)
+values('Douro Litoral', 'O Douro Litoral é uma província histórica de Portugal, formalmente instituída por uma reforma administrativa havida em 1936.');
+
+insert into Concelho(CodDistrito, nomeConcelho, CodProvincia) values(1,'Alcobaça',1);
+insert into Concelho(CodDistrito, nomeConcelho, CodProvincia) values(2,'Alcobaça',1);
+insert into Concelho(CodDistrito, nomeConcelho, CodProvincia) values(3,'Castelo de Paiva',2);
+insert into Concelho(CodDistrito, nomeConcelho, CodProvincia) values(4,'Fundão',3);
+insert into Concelho(CodDistrito, nomeConcelho, CodProvincia) values(5,'Arganil',3);
+
+\end{lstlisting}
+
+
+\subsection{3ª Semana}
+Durante a terceira semana  sockets
+
+\subsection{4ª Semana}
+
+Projeto Final
+
+
 \section{Reflexão Final}
-esta é a minha reflexão
+Esta é a minha reflexão
 
 \end{document}

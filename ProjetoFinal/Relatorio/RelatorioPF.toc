@@ -1,12 +1,28 @@
 \babel@toc {portuguese}{}
-\contentsline {section}{\numberline {1}Introdução}{2}% 
-\contentsline {section}{\numberline {2}Caracterização do Curso}{2}% 
-\contentsline {subsection}{\numberline {2.1}Objetivos do Curso}{2}% 
-\contentsline {section}{\numberline {3}Recursos Materiais}{2}% 
-\contentsline {subsection}{\numberline {3.1}Hardware}{2}% 
-\contentsline {subsection}{\numberline {3.2}Software}{2}% 
-\contentsline {subsubsection}{\numberline {3.2.1}Curso}{2}% 
-\contentsline {subsubsection}{\numberline {3.2.2}Manual de Utilizador}{2}% 
-\contentsline {subsubsection}{\numberline {3.2.3}Relatório}{3}% 
-\contentsline {section}{\numberline {4}Descrição das Atividades Realizadas}{3}% 
-\contentsline {section}{\numberline {5}Reflexão Final}{4}% 
+\contentsline {section}{\numberline {1}Introdução}{2}{section.1}% 
+\contentsline {section}{\numberline {2}Caracterização do Curso}{2}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Objetivos do Curso}{2}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}Area de Atividade}{2}{subsection.2.2}% 
+\contentsline {subsection}{\numberline {2.3}Contactos}{2}{subsection.2.3}% 
+\contentsline {section}{\numberline {3}Recursos Materiais}{2}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Hardware}{2}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Software}{2}{subsection.3.2}% 
+\contentsline {subsubsection}{\numberline {3.2.1}Curso}{2}{subsubsection.3.2.1}% 
+\contentsline {subsubsection}{\numberline {3.2.2}Manual de Utilizador}{3}{subsubsection.3.2.2}% 
+\contentsline {subsubsection}{\numberline {3.2.3}Relatório}{3}{subsubsection.3.2.3}% 
+\contentsline {section}{\numberline {4}Descrição das Atividades Realizadas}{3}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}1ª Semana}{3}{subsection.4.1}% 
+\contentsline {subsubsection}{\numberline {4.1.1}Programa que devolve uma mensagem}{3}{subsubsection.4.1.1}% 
+\contentsline {subsubsection}{\numberline {4.1.2}Programa que Devolve o Resultado de uma Operação Matemática}{3}{subsubsection.4.1.2}% 
+\contentsline {subsubsection}{\numberline {4.1.3}Programa que Devolve a Tabuada de um Número}{4}{subsubsection.4.1.3}% 
+\contentsline {subsubsection}{\numberline {4.1.4}Programa que Devolve o Valor Presente num Espaço de um Array}{4}{subsubsection.4.1.4}% 
+\contentsline {subsubsection}{\numberline {4.1.5}Programa que Cria um formulário}{4}{subsubsection.4.1.5}% 
+\contentsline {subsubsection}{\numberline {4.1.6}Programa que Define COOKIES e em Seguida Devolve-as}{6}{subsubsection.4.1.6}% 
+\contentsline {subsubsection}{\numberline {4.1.7}Programa que Define Variávies de Sessão por Meio de um Formulário e em Seguida Devolve-as}{6}{subsubsection.4.1.7}% 
+\contentsline {subsection}{\numberline {4.2}2ª Semana}{7}{subsection.4.2}% 
+\contentsline {subsubsection}{\numberline {4.2.1}Criação de Tabelas Relacionadas }{7}{subsubsection.4.2.1}% 
+\contentsline {subsubsection}{\numberline {4.2.2}Criação de Utilizadores e Definição dos seus Privilégios}{7}{subsubsection.4.2.2}% 
+\contentsline {subsubsection}{\numberline {4.2.3}Criação de Uma Base de Dados Relacional }{8}{subsubsection.4.2.3}% 
+\contentsline {subsection}{\numberline {4.3}3ª Semana}{9}{subsection.4.3}% 
+\contentsline {subsection}{\numberline {4.4}4ª Semana}{9}{subsection.4.4}% 
+\contentsline {section}{\numberline {5}Reflexão Final}{9}{section.5}% 
