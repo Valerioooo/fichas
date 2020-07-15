@@ -18,11 +18,11 @@
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
-    linkcolor=black,
+    linkcolor=blue,
     filecolor=magenta,
-    urlcolor=black,
+    urlcolor=cyan,
 }
-
+\definecolor{blue}{rgb}{0.48,0.75,1.37}
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
@@ -151,8 +151,12 @@ Durante o decorrer do curso foram utilizados os seguintes materiais:
 
 \section{Descrição das Atividades Realizadas}
 \subsection{1ª Semana}
-Durante a primeira semana foram desenvolvidos programas simples pois estes destinavam-se a ajudar-nos a perceber como é que a linguagem PHP funciona.
-Entre estes estão:
+Para a realização das fichas propostas na 1ª semana foi utilizado este manual de PHP fornecido pelo formador:
+
+(\url{https://drive.google.com/file/d/1pBc5DzuNDO3r-SwA6CAJLiIEQJIsKn2r/view})
+
+Durante a primeira semana foram desenvolvidos programas simples pois estes tinham como propósito ajudar-nos a perceber a sintaxe da linguagem PHP.
+Entre estes programas estão:
 \subsubsection{Programa que devolve uma mensagem}
 Este programa teve como objetivo ensinar-nos a usar a função "\textbf{echo}".
 \begin{lstlisting}[language=PHP]
@@ -399,7 +403,11 @@ Este programa teve como objetivo ensinar-nos a utilizar \textbf{Sessões}.
 
 \subsection{2ª Semana}
 
-Durante a segunda semana houve a abordagem da linguagem SQL de maneira a ensinar os alunos a criar e manipular bases de dados relacionais.
+Para a realização das fichas propostas na 2ª semana foi utilizado este manual de PHP fornecido pelo formador:
+
+(\url{https://drive.google.com/file/d/1KPxefR_ecFTfHb6bireXgTzu93E6CVRZ/view})
+
+Durante a 2ª semana houve a abordagem da linguagem SQL de maneira a ensinar os alunos a criar e manipular bases de dados relacionais.
 Alguns exemplos da sua utilização são:
 
 \subsubsection{Criação de Tabelas Relacionadas }
@@ -498,11 +506,120 @@ insert into Concelho(CodDistrito, nomeConcelho, CodProvincia) values(5,'Arganil'
 
 
 \subsection{3ª Semana}
-Durante a terceira semana  sockets
+Para a realização das fichas propostas na 3ª semana foi utilizado o mesmo manual de PHP da 1ª semana:
+
+(\url{https://drive.google.com/file/d/1KPxefR_ecFTfHb6bireXgTzu93E6CVRZ/view})
+
+Durante a 3ª semana foi trabalhada a ligação a sockets criando clientes e servidores.
+Um exemplo dos exercicios desenvolvidos é:
+
+\subsubsection{Servidor e Cliente que }
+
+\begin{lstlisting}[language=PHP]
+  <?php
+    error_reporting(E_ALL);
+    set_time_limit(0);
+    ob_implicit_flush();
+    $address = "127.0.0.1";
+    $port = "8887";
+    $cliente = array();
+    if( ($sock = socket_create(AF_INET, SOCK_STREAM, 0)) === false){
+      echo "ERRO - Falha na criação do socket! \n".
+      socket_strerror(socket_last_error())."\n";
+    }
+    if(socket_bind($sock, $address, $port) === false){
+      echo "ERRO - Falha na passagem do Endereço e porta para o socket! \n".
+      socket_strerror(socket_last_error($sock))."\n";
+    }
+    if(socket_listen($sock) === false){
+      echo "ERRO - Falha na escuda da ligação ao socket! \n".
+      socket_strerror(socket_last_error($sock))."\n";
+    }
+  do{
+    echo "\nA esperar por clientes...\n";
+    $read = array();
+    $read[] = $sock;
+    $write = array();
+    $expect = array();
+    $tv_sec = NULL;
+  	$cont = 0;
+  	$maxClientes = 2;
+    $read = array_merge($read, $cliente);
+    if(socket_select($read, $write, $expect, $tv_sec) === false){
+      echo "ERRO - Falha ao aceitar a ligação ao socket! ".
+      socket_strerror(socket_last_error($sock))."\n";
+      continue;
+    }
+    if(in_array($sock, $read)){
+      if(($msgsock = socket_accept($sock)) === false){
+        echo "ERRO - Falha ao aceitar a ligação ao socket! ".
+        socket_strerror(socket_last_error($sock))."\n";
+        break;
+      }
+      $cliente[] = $msgsock;
+      $key = array_keys($cliente, $msgsock);
+  		$cont = count($cliente);
+  		if ($cont > $maxClientes) {
+  			echo "Nova ligacao recusada. O servidor chegou ao maximo de ", $maxClientes, " ligacoes";
+  			$msgmax = "O servidor não permite mais ligações";
+  			socket_write($msgsock, $msgmax, strlen($msgmax));
+  			socket_close($client);
+  			unset($cliente[$key]);
+  		}
+  		socket_getpeername($msgsock, $ip);
+      echo "\n Um cliente com ip ",$ip," estabeleceu a ligação - cliente numero: $key[0]\n";
+  		echo "Neste momento esta(ao) " ,$cont, " clientes conectado(s) ao servidor";
+      $msg = "\n Bem-Vindo ao PHP server socket V2 - Multi - Cliente. \n\r".
+      "Voce é o cliente numero: $key[0] \n\r".
+      "Para sair, digite 'quit'. Para desligar o servidor digite 'shutdown'. \n\r";
+      socket_write($msgsock, $msg, strlen($msg));
+    }
+    foreach ($cliente as $key => $client) {
+      if(in_array($client, $read)){
+        if(($buf = socket_read($client, 2048, PHP_NORMAL_READ)) === false){
+          echo "ERRO- Falha na leitura do socket! ".
+          socket_strerror(socket_last_error($client))."\n";
+          break 2;
+        }
+        if(!$buf = trim($buf)){
+          continue;
+        }
+        if($buf == 'quit'){
+  				echo "\n O cliente $key disconectou-se!\n";
+  				socket_close($client);
+          unset($cliente[$key]);
+          break;
+        } else if($buf == 'shutdown'){
+            socket_shutdown($sock);
+          }
+        $talkback = "Cliente $key disse: '$buf' \n";
+  			foreach ($cliente as $key2) {
+  				socket_write($key2,$talkback, strlen($talkback));
+  			}
+        echo "Cliente $key disse: '$buf' \n";
+      }
+    }
+  }while(true);
+  socket_close($sock);
+  echo "o servidor encerrou";
+?>
+\end{lstlisting}
+
 
 \subsection{4ª Semana}
 
-Projeto Final
+Para a realização do Projeto Final da 4ª semana foi utilizado este manual de PHP fornecido pelo formador:
+
+(\url{https://drive.google.com/file/d/1KPxefR_ecFTfHb6bireXgTzu93E6CVRZ/view})
+
+Durante a 4ª Semana foi desenvolvido o Projeto Final do curso.
+Este consistia em desenvolver uma base de dados relacional em SQL e em seguida um site para fazer a sua manipulação.
+A integração do site com a base de dados foi feita na linguagem PHP.
+
+Para a criação deste Projeto Final foi utilizado
+O código fonte do Projeto está disponível neste endereço:
+
+(\url{https://github.com/Valerioooo/fichas/tree/master/ProjetoFinal/site})
 
 
 \section{Reflexão Final}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.7.7)  13 JUL 2020 15:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.7.7)  15 JUL 2020 00:41
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -644,22 +644,23 @@ File: lstlang2.sty 2019/09/10 1.8c listings language file
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/n' in size <8> not available
 
 (Font)              Font shape `T1/ClearSans-TLF/regular/n' tried instead on in
-put line 159.
+put line 163.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
-(Font)              scaled to size 8.0pt on input line 159.
+(Font)              scaled to size 8.0pt on input line 163.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/n' in size <5> not available
 
 (Font)              Font shape `T1/ClearSans-TLF/regular/n' tried instead on in
-put line 159.
+put line 163.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
-(Font)              scaled to size 5.0pt on input line 159.
+(Font)              scaled to size 5.0pt on input line 163.
+[3]
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/b/it' in size <10> not availab
 le
 (Font)              Font shape `T1/ClearSans-TLF/bold/it' tried instead on inpu
-t line 199.
+t line 203.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/bold/it' will be
-(Font)              scaled to size 10.0pt on input line 199.
-[3] [4]
+(Font)              scaled to size 10.0pt on input line 203.
+[4]
 
 ! Package inputenc Error: Invalid UTF-8 byte sequence.
 
@@ -667,7 +668,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.266 ...label for="telefone">Telefone/Telemóvel:
+l.270 ...label for="telefone">Telefone/Telemóvel:
                                                    </label> <input type = "t...
 
 The document does not appear to be in UTF-8 encoding.
@@ -683,7 +684,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.266 ...label for="telefone">Telefone/Telemóvel:
+l.270 ...label for="telefone">Telefone/Telemóvel:
                                                    </label> <input type = "t...
 
 The document does not appear to be in UTF-8 encoding.
@@ -699,7 +700,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.291 ...<label for="nivel">Selecione uma opção:
+l.295 ...<label for="nivel">Selecione uma opção:
                                                   </label>
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -714,7 +715,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.291 ...<label for="nivel">Selecione uma opção:
+l.295 ...<label for="nivel">Selecione uma opção:
                                                   </label>
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -729,7 +730,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.291 ...<label for="nivel">Selecione uma opção:
+l.295 ...<label for="nivel">Selecione uma opção:
                                                   </label>
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -744,7 +745,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.291 ...<label for="nivel">Selecione uma opção:
+l.295 ...<label for="nivel">Selecione uma opção:
                                                   </label>
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -759,7 +760,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.295 ...        <option value="init">Iniciação<
+l.299 ...        <option value="init">Iniciação<
                                                   /option>
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -774,7 +775,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.295 ...        <option value="init">Iniciação<
+l.299 ...        <option value="init">Iniciação<
                                                   /option>
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -789,7 +790,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.295 ...        <option value="init">Iniciação<
+l.299 ...        <option value="init">Iniciação<
                                                   /option>
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -804,7 +805,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.295 ...        <option value="init">Iniciação<
+l.299 ...        <option value="init">Iniciação<
                                                   /option>
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -819,7 +820,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.296 ...         <option value="med">Intermédio<
+l.300 ...         <option value="med">Intermédio<
                                                   /option>
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -834,7 +835,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.296 ...         <option value="med">Intermédio<
+l.300 ...         <option value="med">Intermédio<
                                                   /option>
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -849,7 +850,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.297 ...           <option value="adv">Avançado<
+l.301 ...           <option value="adv">Avançado<
                                                   /option>
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -864,7 +865,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.297 ...           <option value="adv">Avançado<
+l.301 ...           <option value="adv">Avançado<
                                                   /option>
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -879,7 +880,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.307 ...          <label for="obs">Observações:
+l.311 ...          <label for="obs">Observações:
                                                   </label>
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -894,7 +895,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.307 ...          <label for="obs">Observações:
+l.311 ...          <label for="obs">Observações:
                                                   </label>
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -909,7 +910,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.307 ...          <label for="obs">Observações:
+l.311 ...          <label for="obs">Observações:
                                                   </label>
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -924,7 +925,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.307 ...          <label for="obs">Observações:
+l.311 ...          <label for="obs">Observações:
                                                   </label>
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -940,7 +941,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.365 ... type = "submit" value= "Iniciar Sessão"
+l.369 ... type = "submit" value= "Iniciar Sessão"
                                                    name="sendform">
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -955,7 +956,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.365 ... type = "submit" value= "Iniciar Sessão"
+l.369 ... type = "submit" value= "Iniciar Sessão"
                                                    name="sendform">
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -970,7 +971,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.384 ... type = "submit" value= "Iniciar Sessão"
+l.388 ... type = "submit" value= "Iniciar Sessão"
                                                    name="sendform">
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -985,7 +986,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.384 ... type = "submit" value= "Iniciar Sessão"
+l.388 ... type = "submit" value= "Iniciar Sessão"
                                                    name="sendform">
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -1001,7 +1002,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.393          echo 'O seu IP é'
+l.397          echo 'O seu IP é'
                                  .$_SESSION['user']['ip'];
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -1016,7 +1017,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.393          echo 'O seu IP é'
+l.397          echo 'O seu IP é'
                                  .$_SESSION['user']['ip'];
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -1034,7 +1035,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.456   População 
+l.464   População 
                     int not null
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -1049,7 +1050,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.456   População 
+l.464   População 
                     int not null
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -1064,7 +1065,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.456   População 
+l.464   População 
                     int not null
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -1079,7 +1080,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.456   População 
+l.464   População 
                     int not null
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -1094,7 +1095,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.481 values('Estremadura', 'A Estremadura é 
+l.489 values('Estremadura', 'A Estremadura é 
                                               uma província histórica (ou ...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1110,7 +1111,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.481 values('Estremadura', 'A Estremadura é 
+l.489 values('Estremadura', 'A Estremadura é 
                                               uma província histórica (ou ...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1126,7 +1127,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.481 ...adura', 'A Estremadura é uma província 
+l.489 ...adura', 'A Estremadura é uma província 
                                                   histórica (ou região nat...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1142,7 +1143,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.481 ...adura', 'A Estremadura é uma província 
+l.489 ...adura', 'A Estremadura é uma província 
                                                   histórica (ou região nat...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1158,7 +1159,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.481 ...Estremadura é uma província histórica 
+l.489 ...Estremadura é uma província histórica 
                                                   (ou região natural) de Po...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1174,7 +1175,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.481 ...Estremadura é uma província histórica 
+l.489 ...Estremadura é uma província histórica 
                                                   (ou região natural) de Po...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1190,7 +1191,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.481 ...é uma província histórica (ou região 
+l.489 ...é uma província histórica (ou região 
                                                   natural) de Portugal, esta...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1206,7 +1207,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.481 ...é uma província histórica (ou região 
+l.489 ...é uma província histórica (ou região 
                                                   natural) de Portugal, esta...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1222,7 +1223,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.481 ...e Portugal, estabelecida na Idade Média 
+l.489 ...e Portugal, estabelecida na Idade Média 
                                                   e extinta no século XIX, ...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1238,7 +1239,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.481 ...e Portugal, estabelecida na Idade Média 
+l.489 ...e Portugal, estabelecida na Idade Média 
                                                   e extinta no século XIX, ...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1254,7 +1255,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.481 ...ida na Idade Média e extinta no século 
+l.489 ...ida na Idade Média e extinta no século 
                                                   XIX, devendo o seu nome de...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1270,7 +1271,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.481 ...ida na Idade Média e extinta no século 
+l.489 ...ida na Idade Média e extinta no século 
                                                   XIX, devendo o seu nome de...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1286,7 +1287,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.483 values('Beira Litoral', 'A Beira Litoral é 
+l.491 values('Beira Litoral', 'A Beira Litoral é 
                                                   uma província histórica ...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1302,7 +1303,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.483 values('Beira Litoral', 'A Beira Litoral é 
+l.491 values('Beira Litoral', 'A Beira Litoral é 
                                                   uma província histórica ...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1318,7 +1319,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.483 ...ral', 'A Beira Litoral é uma província 
+l.491 ...ral', 'A Beira Litoral é uma província 
                                                   histórica (ou região nat...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1334,7 +1335,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.483 ...ral', 'A Beira Litoral é uma província 
+l.491 ...ral', 'A Beira Litoral é uma província 
                                                   histórica (ou região nat...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1350,7 +1351,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.483 ...ira Litoral é uma província histórica 
+l.491 ...ira Litoral é uma província histórica 
                                                   (ou região natural) situa...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1366,7 +1367,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.483 ...ira Litoral é uma província histórica 
+l.491 ...ira Litoral é uma província histórica 
                                                   (ou região natural) situa...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1382,7 +1383,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.483 ...é uma província histórica (ou região 
+l.491 ...é uma província histórica (ou região 
                                                   natural) situada na regiã...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1398,7 +1399,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.483 ...é uma província histórica (ou região 
+l.491 ...é uma província histórica (ou região 
                                                   natural) situada na regiã...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1414,7 +1415,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.483 ... (ou região natural) situada na região 
+l.491 ... (ou região natural) situada na região 
                                                   do Centro de Portugal, for...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1430,7 +1431,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.483 ... (ou região natural) situada na região 
+l.491 ... (ou região natural) situada na região 
                                                   do Centro de Portugal, for...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1446,7 +1447,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.483 ...tro de Portugal, formalmente instituída 
+l.491 ...tro de Portugal, formalmente instituída 
                                                   por uma reforma administra...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1462,7 +1463,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.483 ...tro de Portugal, formalmente instituída 
+l.491 ...tro de Portugal, formalmente instituída 
                                                   por uma reforma administra...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1478,7 +1479,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.485 values('Beira Baixa', 'A Beira Baixa é 
+l.493 values('Beira Baixa', 'A Beira Baixa é 
                                               uma província histórica (ou ...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1494,7 +1495,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.485 values('Beira Baixa', 'A Beira Baixa é 
+l.493 values('Beira Baixa', 'A Beira Baixa é 
                                               uma província histórica (ou ...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1510,7 +1511,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.485 ...Baixa', 'A Beira Baixa é uma província 
+l.493 ...Baixa', 'A Beira Baixa é uma província 
                                                   histórica (ou região nat...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1526,7 +1527,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.485 ...Baixa', 'A Beira Baixa é uma província 
+l.493 ...Baixa', 'A Beira Baixa é uma província 
                                                   histórica (ou região nat...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1542,7 +1543,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.485 ...Beira Baixa é uma província histórica 
+l.493 ...Beira Baixa é uma província histórica 
                                                   (ou região natural) situa...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1558,7 +1559,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.485 ...Beira Baixa é uma província histórica 
+l.493 ...Beira Baixa é uma província histórica 
                                                   (ou região natural) situa...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1574,7 +1575,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.485 ...é uma província histórica (ou região 
+l.493 ...é uma província histórica (ou região 
                                                   natural) situada na regiã...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1590,7 +1591,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.485 ...é uma província histórica (ou região 
+l.493 ...é uma província histórica (ou região 
                                                   natural) situada na regiã...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1606,7 +1607,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.485 ... (ou região natural) situada na região 
+l.493 ... (ou região natural) situada na região 
                                                   do Centro de Portugal, ori...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1622,7 +1623,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.485 ... (ou região natural) situada na região 
+l.493 ... (ou região natural) situada na região 
                                                   do Centro de Portugal, ori...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1638,7 +1639,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.485 ...ortugal, originalmente criada no século 
+l.493 ...ortugal, originalmente criada no século 
                                                   XIX a partir de parte do t...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1654,7 +1655,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.485 ...ortugal, originalmente criada no século 
+l.493 ...ortugal, originalmente criada no século 
                                                   XIX a partir de parte do t...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1670,7 +1671,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.485 ...ulo XIX a partir de parte do território 
+l.493 ...ulo XIX a partir de parte do território 
                                                   da anterior Província da ...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1686,7 +1687,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.485 ...ulo XIX a partir de parte do território 
+l.493 ...ulo XIX a partir de parte do território 
                                                   da anterior Província da ...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1702,7 +1703,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.485 ...te do território da anterior Província 
+l.493 ...te do território da anterior Província 
                                                   da Beira.');
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -1717,7 +1718,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.485 ...te do território da anterior Província 
+l.493 ...te do território da anterior Província 
                                                   da Beira.');
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -1732,7 +1733,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.487 values('Beira Alta', 'A Beira Alta é 
+l.495 values('Beira Alta', 'A Beira Alta é 
                                             uma província histórica (ou re...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1748,7 +1749,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.487 values('Beira Alta', 'A Beira Alta é 
+l.495 values('Beira Alta', 'A Beira Alta é 
                                             uma província histórica (ou re...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1764,7 +1765,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.487 ...a Alta', 'A Beira Alta é uma província 
+l.495 ...a Alta', 'A Beira Alta é uma província 
                                                   histórica (ou região nat...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1780,7 +1781,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.487 ...a Alta', 'A Beira Alta é uma província 
+l.495 ...a Alta', 'A Beira Alta é uma província 
                                                   histórica (ou região nat...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1796,7 +1797,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.487 ... Beira Alta é uma província histórica 
+l.495 ... Beira Alta é uma província histórica 
                                                   (ou região natural) situa...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1812,7 +1813,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.487 ... Beira Alta é uma província histórica 
+l.495 ... Beira Alta é uma província histórica 
                                                   (ou região natural) situa...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1828,7 +1829,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.487 ...é uma província histórica (ou região 
+l.495 ...é uma província histórica (ou região 
                                                   natural) situada na regiã...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1844,7 +1845,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.487 ...é uma província histórica (ou região 
+l.495 ...é uma província histórica (ou região 
                                                   natural) situada na regiã...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1860,7 +1861,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.487 ... (ou região natural) situada na região 
+l.495 ... (ou região natural) situada na região 
                                                   do Centro de Portugal. Foi...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1876,7 +1877,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.487 ... (ou região natural) situada na região 
+l.495 ... (ou região natural) situada na região 
                                                   do Centro de Portugal. Foi...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1892,7 +1893,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.487 ...al. Foi criada, em 1832, por subdivisão 
+l.495 ...al. Foi criada, em 1832, por subdivisão 
                                                   da antiga província da Be...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1908,7 +1909,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.487 ...al. Foi criada, em 1832, por subdivisão 
+l.495 ...al. Foi criada, em 1832, por subdivisão 
                                                   da antiga província da Be...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1924,7 +1925,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.487 ...32, por subdivisão da antiga província 
+l.495 ...32, por subdivisão da antiga província 
                                                   da Beira, passando a ser c...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1940,7 +1941,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.487 ...32, por subdivisão da antiga província 
+l.495 ...32, por subdivisão da antiga província 
                                                   da Beira, passando a ser c...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1956,7 +1957,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.487 ...ia da Beira, passando a ser constituída 
+l.495 ...ia da Beira, passando a ser constituída 
                                                   pelas comarcas de Viseu, L...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1972,7 +1973,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.487 ...ia da Beira, passando a ser constituída 
+l.495 ...ia da Beira, passando a ser constituída 
                                                   pelas comarcas de Viseu, L...
 
 The document does not appear to be in UTF-8 encoding.
@@ -1988,7 +1989,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.489 values('Douro Litoral', 'O Douro Litoral é 
+l.497 values('Douro Litoral', 'O Douro Litoral é 
                                                   uma província histórica ...
 
 The document does not appear to be in UTF-8 encoding.
@@ -2004,7 +2005,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.489 values('Douro Litoral', 'O Douro Litoral é 
+l.497 values('Douro Litoral', 'O Douro Litoral é 
                                                   uma província histórica ...
 
 The document does not appear to be in UTF-8 encoding.
@@ -2020,7 +2021,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.489 ...ral', 'O Douro Litoral é uma província 
+l.497 ...ral', 'O Douro Litoral é uma província 
                                                   histórica de Portugal, fo...
 
 The document does not appear to be in UTF-8 encoding.
@@ -2036,7 +2037,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.489 ...ral', 'O Douro Litoral é uma província 
+l.497 ...ral', 'O Douro Litoral é uma província 
                                                   histórica de Portugal, fo...
 
 The document does not appear to be in UTF-8 encoding.
@@ -2052,7 +2053,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.489 ...uro Litoral é uma província histórica 
+l.497 ...uro Litoral é uma província histórica 
                                                   de Portugal, formalmente i...
 
 The document does not appear to be in UTF-8 encoding.
@@ -2068,7 +2069,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.489 ...uro Litoral é uma província histórica 
+l.497 ...uro Litoral é uma província histórica 
                                                   de Portugal, formalmente i...
 
 The document does not appear to be in UTF-8 encoding.
@@ -2084,7 +2085,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.489 ...ica de Portugal, formalmente instituída 
+l.497 ...ica de Portugal, formalmente instituída 
                                                   por uma reforma administra...
 
 The document does not appear to be in UTF-8 encoding.
@@ -2100,7 +2101,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.489 ...ica de Portugal, formalmente instituída 
+l.497 ...ica de Portugal, formalmente instituída 
                                                   por uma reforma administra...
 
 The document does not appear to be in UTF-8 encoding.
@@ -2116,7 +2117,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.491 ...celho, CodProvincia) values(1,'Alcobaça'
+l.499 ...celho, CodProvincia) values(1,'Alcobaça'
                                                   ,1);
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -2131,7 +2132,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.491 ...celho, CodProvincia) values(1,'Alcobaça'
+l.499 ...celho, CodProvincia) values(1,'Alcobaça'
                                                   ,1);
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -2146,7 +2147,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.492 ...celho, CodProvincia) values(2,'Alcobaça'
+l.500 ...celho, CodProvincia) values(2,'Alcobaça'
                                                   ,1);
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -2161,7 +2162,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.492 ...celho, CodProvincia) values(2,'Alcobaça'
+l.500 ...celho, CodProvincia) values(2,'Alcobaça'
                                                   ,1);
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -2176,7 +2177,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.494 ...oncelho, CodProvincia) values(4,'Fundão'
+l.502 ...oncelho, CodProvincia) values(4,'Fundão'
                                                   ,3);
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -2191,7 +2192,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.494 ...oncelho, CodProvincia) values(4,'Fundão'
+l.502 ...oncelho, CodProvincia) values(4,'Fundão'
                                                   ,3);
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -2200,21 +2201,476 @@ in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
 [8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 511.
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.527       echo "ERRO - Falha na criação 
+                                            do socket! \n".
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte "A7.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.527       echo "ERRO - Falha na criação 
+                                            do socket! \n".
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.527       echo "ERRO - Falha na criação 
+                                            do socket! \n".
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte "A3.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.527       echo "ERRO - Falha na criação 
+                                            do socket! \n".
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.531 ...o "ERRO - Falha na passagem do Endereço 
+                                                  e porta para o socket! \n".
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte "A7.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.531 ...o "ERRO - Falha na passagem do Endereço 
+                                                  e porta para o socket! \n".
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.535 ...cho "ERRO - Falha na escuda da ligação 
+                                                  ao socket! \n".
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte "A7.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.535 ...cho "ERRO - Falha na escuda da ligação 
+                                                  ao socket! \n".
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.535 ...cho "ERRO - Falha na escuda da ligação 
+                                                  ao socket! \n".
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte "A3.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.535 ...cho "ERRO - Falha na escuda da ligação 
+                                                  ao socket! \n".
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.549 ...cho "ERRO - Falha ao aceitar a ligação 
+                                                  ao socket! ".
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte "A7.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.549 ...cho "ERRO - Falha ao aceitar a ligação 
+                                                  ao socket! ".
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.549 ...cho "ERRO - Falha ao aceitar a ligação 
+                                                  ao socket! ".
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte "A3.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.549 ...cho "ERRO - Falha ao aceitar a ligação 
+                                                  ao socket! ".
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.555 ...cho "ERRO - Falha ao aceitar a ligação 
+                                                  ao socket! ".
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte "A7.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.555 ...cho "ERRO - Falha ao aceitar a ligação 
+                                                  ao socket! ".
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.555 ...cho "ERRO - Falha ao aceitar a ligação 
+                                                  ao socket! ".
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte "A3.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.555 ...cho "ERRO - Falha ao aceitar a ligação 
+                                                  ao socket! ".
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.564   			$msgmax = "O servidor não 
+                                      permite mais ligações";
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte "A3.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.564   			$msgmax = "O servidor não 
+                                      permite mais ligações";
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.564 ..."O servidor não permite mais ligações"
+                                                  ;
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte "A7.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.564 ..."O servidor não permite mais ligações"
+                                                  ;
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.564 ..."O servidor não permite mais ligações"
+                                                  ;
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte "B5.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.564 ..."O servidor não permite mais ligações"
+                                                  ;
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
 [9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 511.
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.570 ...e com ip ",$ip," estabeleceu a ligação 
+                                                  - cliente numero: $key[0]\n";
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte "A7.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.570 ...e com ip ",$ip," estabeleceu a ligação 
+                                                  - cliente numero: $key[0]\n";
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.570 ...e com ip ",$ip," estabeleceu a ligação 
+                                                  - cliente numero: $key[0]\n";
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte "A3.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.570 ...e com ip ",$ip," estabeleceu a ligação 
+                                                  - cliente numero: $key[0]\n";
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.573       "Voce é 
+                     o cliente numero: $key[0] \n\r".
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! Package inputenc Error: Invalid UTF-8 byte "A9.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.573       "Voce é 
+                     o cliente numero: $key[0] \n\r".
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 628.
+[10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 628.
 (./RelatorioPF.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 511.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 511.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 628.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 628.
 Package rerunfilecheck Info: File `RelatorioPF.out' has not changed.
-(rerunfilecheck)             Checksum: CCC4660AA3594DE7BCB7B0A282126591;2215.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 511.
+(rerunfilecheck)             Checksum: 5157EE6A3CCF10984B9CEB89E4BF0998;2298.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 628.
  ) 
 Here is how much of TeX's memory you used:
- 12097 strings out of 492167
- 179363 string characters out of 6131559
- 901794 words of memory out of 5000000
- 16002 multiletter control sequences out of 15000+600000
+ 12222 strings out of 492167
+ 181293 string characters out of 6131559
+ 917331 words of memory out of 5000000
+ 16037 multiletter control sequences out of 15000+600000
  68866 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  35i,12n,74p,310b,3053s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2226,10 +2682,10 @@ learSans-BoldItalic.pfb></usr/share/texmf-dist/fonts/type1/intel/clearsans/Clea
 rSans-Italic.pfb></usr/share/texmf-dist/fonts/type1/intel/clearsans/ClearSans-R
 egular.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></us
 r/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on RelatorioPF.pdf (10 pages, 158880 bytes).
+Output written on RelatorioPF.pdf (11 pages, 177832 bytes).
 PDF statistics:
- 567 PDF objects out of 1000 (max. 8388607)
- 543 compressed objects within 6 object streams
- 315 named destinations out of 1000 (max. 500000)
- 217 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 688 PDF objects out of 1000 (max. 8388607)
+ 662 compressed objects within 7 object streams
+ 405 named destinations out of 1000 (max. 500000)
+ 225 words of extra memory for PDF output out of 10000 (max. 10000000)
 

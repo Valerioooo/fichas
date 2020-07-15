@@ -133,7 +133,7 @@ error_reporting(0);
 <div class="container">
   <div class="card border-1 shadow my-2">
     <div class="card-body p-5">
-      <h1 class="font-weight-hard">Página inicial</h1>
+      <h1 class="font-weight-hard">Página inicialo</h1>
       <p class="lead">Dirija-se ao menu para realizar ações nas tabelas</p>
       <div style="height: 600px"></div>
       <p class="lead mb-0"></p>
