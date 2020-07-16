@@ -1,7 +1,11 @@
 \documentclass[14pt]{article}
 
 \usepackage[a4paper, left=2cm, right=2cm]{geometry} % A4 paper size and thin margins
+% assinatura
 
+\usepackage[signature=default_signature, nojob]{mysignature}
+
+%--------
 \usepackage{xcolor} % Required for specifying custom colours
 \definecolor{grey}{rgb}{0.8,0.8,1} % Colour of the box surrounding the title
 
@@ -12,17 +16,18 @@
 \usepackage[sfdefault]{ClearSans} % Use the Clear Sans font (sans serif)
 %\usepackage{XCharter} % Use the XCharter font (serif)
 \usepackage{fancyhdr}
+\usepackage{dirtytalk}
 \usepackage{listings}
 \usepackage{xcolor}
 \usepackage{float}
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
-    linkcolor=blue,
+    linkcolor=cyan,
     filecolor=magenta,
     urlcolor=cyan,
 }
-\definecolor{blue}{rgb}{0.48,0.75,1.37}
+\definecolor{blue}{rgb}{0.15,0.0,1.20}
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
@@ -89,7 +94,7 @@
 \tableofcontents
 \newpage
 
-\section{Introdução}
+\section{Introdução} \label{introducao}
 Este relatório foi realizado no âmbito do curso de prática simulada facultado pela \textbf{ANPRI} (Associação Nacional Professores de Informática), a que fomos submetidos no lugar da
 Formação em Contexto de Trabalho devido à pandemia de Covid-19 a que estamos a passar de momento.
 
@@ -616,13 +621,64 @@ Durante a 4ª Semana foi desenvolvido o Projeto Final do curso.
 Este consistia em desenvolver uma base de dados relacional em SQL e em seguida um site para fazer a sua manipulação.
 A integração do site com a base de dados foi feita na linguagem PHP.
 
-Para a criação deste Projeto Final foi utilizado
+Para a criação deste Projeto Final foi utilizado \href{https://getbootstrap.com/}{\textbf{\textit{Bootstrap 4}}} para facilitar o design do site e a implementação do mesmo:
+
+
 O código fonte do Projeto está disponível neste endereço:
 
 (\url{https://github.com/Valerioooo/fichas/tree/master/ProjetoFinal/site})
 
 
+\newpage
 \section{Reflexão Final}
-Esta é a minha reflexão
+
+No inicio do curso as atividades foram bem definidos como mostra a figura seguinte:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\linewidth]{cal.png}
+    \caption{Calendário da primeira semana}
+    \label{fig:cal}
+\end{figure}
+
+
+Mesmo assim estes não foram cumpridos por parte do formador:
+
+\begin{itemize}
+  \item No primeiro dia (3ª feira) apenas existia forma de marcar presença para o segundo (4ª feira) e no dia seguinte foi adicionada a marcação de presença para o dia anterior;
+  \item Não existiam atividades propostas nos primeiros dias;
+  \item Não existiu qualquer interação entre o formador e os alunos durante as primeiras duas semanas;
+  \item Existiu então uma reunião na plataforma \textit{Zoom}, à qual nem eu nem muitos alunos fomos convidados/notificados, que acabou por não ser efetuada pois o limite da plataforma é de 100 participantes enquanto o numero de alunos do curso acabava por exeder os 200;
+  \item O formador não respondeu a nenhuma dúvida no forum de dúvidas até perto da 3ª semana do curso;
+  \item Nunca exitiu qualquer tipo de teste ou "miniteste" durante o decorrer do curso.
+\end{itemize}
+\newline
+Também existiram vários problemas referentes à organização do curso:
+\begin{itemize}
+  \item As fichas fornecidas aos alunos não eram claras em certos aspetos;
+  \item Não existiu qualquer contacto pela ANPRI em relação aos problemas enfrentados na utilização do site devido aos ataques sucessivos descritos no ponto \large\ref{introducao}.
+\end{itemize}
+\newpage
+Durante o curso encontrei poucas dificuldades associadas com as fichas, exceto na ficha em que eram tratados os \textit{Sockets}:
+O servidor Xampp não habilita os \textit{Sockets} por defeito. Sendo necessário que estes sejam habilitados por meio da edição do ficheiro php.ini se o Sistema Operativo utilizado for \textit{Windows}, e a compilação do código fonte da linguagem PHP com a \textit{flag} \say{--enable-sockets} caso o Sistema Operativo utilizado for MacOS ou Linux.
+
+A Prof. Ester Tavares ajudou-me bastante execução desta ficha e também no desenvolvimento do Projeto Final de curso.
+
+O Projeto Final foi a parte mais interessante do curso na minha opinião, pois este proporcionou-me a descobrir a ferramenta {\textbf{\textit{Bootstrap}} (recomendada pela Prof. Ester Tavares) que se revelou uma grande ajuda ao desenvolvimento do Site.
+
+Deixando de lado os problemas existentes, o curso revelou-se bastante interessante em termos de aprendizagem autónoma pelo facto da maioria das tarefas terem sido executadas apenas com recurso à documentação especifíca das ferramentas, a Tutoriais em vídeo e a fóruns de programação na Internet.
+
+Pelo facto de ter entregue todos os trabalhos completos no devido prazo e por ter consciência de que executei as tarefas com o maior zelo pela qualidade das mesmas, penso que mereço uma nota de fim de estágio de 18 valores.
+\newline
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.80\linewidth]{certificado.png}
+    \caption{Certificado do Curso}
+    \label{fig:certificado}
+\end{figure}
+
+
+\mysignature[left]{full}
+
 
 \end{document}
