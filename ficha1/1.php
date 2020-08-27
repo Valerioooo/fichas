@@ -6,6 +6,5 @@
   </head>
   <body>
     <?php echo "O primeiro programa nunca se esquece!"; ?>
-
   </body>
 </html>
